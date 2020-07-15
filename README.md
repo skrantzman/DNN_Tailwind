@@ -1,33 +1,43 @@
-[![](https://www.nvquicktheme.com/Portals/0/nvQuickTheme_LOGO_final.png)](https://www.nvquicktheme.com)
+## This project is under development and not ready for production
 
-[![Build status](https://nvisionative.visualstudio.com/nvQuickTheme/_apis/build/status/nvQuickTheme-Node.js%20With%20gulp-CI)](https://nvisionative.visualstudio.com/nvQuickTheme/_build/latest?definitionId=1) [![Greenkeeper badge](https://badges.greenkeeper.io/nvisionative/nvQuickTheme.svg)](https://greenkeeper.io/) [![HitCount](http://hits.dwyl.io/nvisionative/nvQuickTheme.svg)](http://hits.dwyl.io/nvisionative/nvQuickTheme)
+Started production on 7/14/2020 - 9:00 am pst.
 
-**nvQuickTheme** is more than just a great minimalist DNN (DotNetNuke) theme.  It is a powerful theme building framework and developer workflow.  This "starter solution" was made with developer efficiency and the ultimate DNN theme performance in mind.  Most DNN themes in the marketplace today are loaded with bloat, which can make theming a pain, and for someone new to DNN, almost impossible.  Our [documentation](https://nvisionative.github.io/nvQuickTheme/) will outline basic usage, modification, and advanced usage of this framework and developer workflow.
+<p align="center"><img src="https://raw.githubusercontent.com/skrantzman/DNN_Tailwind/master/images/DNN_Tailwind.png"alt="XMP Snippets Logo"></p>
+<br />
 
-Are you tired of spending countless hours trying to squeeze every ounce of performance out of your DNN themes, just so you can rank better on *Google PageSpeed Insights*?  How are your scores?  Have you broken the **80s for Desktop** or the **60s for Mobile**?  You have probably discovered by now that it is very tough to accomplish this on a DNN site.  
+**DNN_Tailwind**, based on [nvQuickTheme](https://github.com/nvisionative/nvQuickTheme) by nvisionative,
+is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **Tailwind CSS** theme building framework and developer workflow.
 
-Well, the search is over!  Utilizing **nvQuickTheme**, you can rest assured that you are doing everything you possibly can within the context of the theme to achieve stellar scores.  As a matter of fact, the [nvQuickTheme website](http://www.nvquicktheme.com), which of course is running nvQuickTheme, scores **100/100 (Desktop)** and **89/100 (Mobile)**.  Yes, you read that correctly.  If you don't believe us, please feel free to [analyze it yourself](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.nvquicktheme.com%2F&tab=desktop)!
+## Instalation Instructions
 
-## Background
+1. Clone this git to the skins folder of a local DNN development machine accessible by dnndev.me. The default folder name is "DNN_Tailwind", but you can rename this if desired.
 
-There have been many ways to develop DNN themes over the years.  Some start from scratch using pure HTML with the [TOKEN] based model provided by DNN.  Others, especially more hardcore developers, start with ASP.NET Web User Controls (instead of pure HTML).  All end up using some shape, form, fashion or flavor of Cascading Style Sheets (CSS) and Javascript (JS).  
+2. Change directory into DNN_Tailwind folder.
+   ```
+   cd DNN_Tailwind
+   ```
+3. Install then dependencies need for the framework
+   ```
+   yarn install
+   ```
+4. Create/Update the Tailwind CSS files... This will create a new folder under src/scss called tailwind that contains the \_tailwind.scss file.
+   ```
+   yarn run build
+   ```
+5. Create/Update the projects dist folder and files.
+   ```
+   gulp build
+   ```
+6. Enable auto updating the dist files every time you save.
 
-Some work with a manual workflow, editing flat files with their favorite code/text editor and wiring everything up "old school".  Others use a fully Integrated Development Environment (IDE), like Visual Studio.  Many even use the famous Christoc Visual Studio Templates for building out themes in a more structured way.  Yet others develop their own unique workflows that best suit their particular use case.
+   ```
+   gulp watch
+   ```
 
-The [nvisionative](http://www.nvisionative.com) team has been working in the DNN ecosystem since its inception and has seen all sorts of approaches for custom and commercial themes alike.  A large majority of these themes are bloated with all sorts of widgets, 3rd party components, bells, whistles, etc.  Given the great depth of experience over the years, our team has identified so many ways to resolve issues in and improve DNN themes.  From **best practices** to HUGE **performance enhancements**, there have been so many lessons learned.  Now it is time give back to this great community that has provided so much to us.
+   At this point you are ready to start customizing the base theme with Tailwind CSS!
 
-## Documentation
-[Learn How To Use nvQuickTheme](https://nvisionative.github.io/nvQuickTheme/)
+7. Once your satisived with theme you can package it up into a dnn skin package with the following command.
 
-## Video Series
-### Intro
-[![nvQuickTheme Video Series - Intro](https://img.youtube.com/vi/-w0qSTZfBUU/0.jpg)](https://www.youtube.com/watch?v=-w0qSTZfBUU)
-
-### Project Setup
-[![nvQuickTheme Video Series - Project Setup](https://img.youtube.com/vi/7UhpbUaeFQc/0.jpg)](https://www.youtube.com/watch?v=7UhpbUaeFQc)
- 
-### Color Scheme
-[![nvQuickTheme Video Series - Color Scheme](https://img.youtube.com/vi/o1XW3e8JKfw/0.jpg)](https://www.youtube.com/watch?v=o1XW3e8JKfw)
-  
----
-[![Brought to the DNN community by nvisionative](http://www.nvquicktheme.com/Portals/0/broughtBy-nvisionative.png)](http://www.nvisionative.com)
+   ```
+   gulp package
+   ```
