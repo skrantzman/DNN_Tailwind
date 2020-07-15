@@ -1,9 +1,9 @@
 {
-	"project": "nvQuickTheme",
-	"version": "2.2.0",
-	"author": "TK Sheppard &amp; David Poindexter",
-	"company": "nvisionative",
-	"url": "www.nvquicktheme.com",
-    "email": "support@nvisionative.com",
-    "description": "A DNN Theme Dev Framework"
+	"project": "DNN_Tailwind",
+	"version": "1.0.0",
+	"author": "Steve Krantzman",
+	"company": "GCC",
+	"url": "",
+	"email": "",
+	"description": "A DNN Tailwind Theme Dev Framework"
 }

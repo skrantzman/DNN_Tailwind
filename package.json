@@ -1,43 +1,46 @@
 {
-  "name": "nvquicktheme",
-  "version": "2.2.0",
-  "description": "Barebones Bootstrap 4 DNN Theme",
-  "main": "gulpfile.js",
-  "author": "nvisionative",
-  "license": "GPL-3.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
-    "bootstrap": "^4.4.1",
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-jshint": "2.x",
-    "gulp-notify": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.0",
-    "gulp-zip": "^4.1.0",
-    "jshint": "^2.9.5"
-  },
-  "browserslist": [
-    "> 1%",
-    "ie >= 8",
-    "edge >= 15",
-    "ie_mob >= 10",
-    "ff >= 45",
-    "chrome >= 45",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4",
-    "bb >= 10"
-  ]
+	"name": "dnn_tailwind",
+	"version": "2.2.0",
+	"description": "DNN Tailwind Base Theme",
+	"main": "gulpfile.js",
+	"scripts": {
+		"build": "postcss css/tailwind.css -o src/scss/tailwind/_tailwind.scss"
+	},
+	"author": "Steve Krantzman",
+	"license": "GPL-3.0",
+	"private": true,
+	"dependencies": {
+		"autoprefixer": "^9.8.5",
+		"postcss-cli": "^7.1.1",
+		"tailwindcss": "^1.4.6"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.26.7",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "^4.0.0",
+		"gulp-imagemin": "^5.0.3",
+		"gulp-jshint": "2.x",
+		"gulp-notify": "^3.0.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.0",
+		"gulp-zip": "^4.1.0",
+		"jshint": "^2.9.5"
+	},
+	"browserslist": [
+		"> 1%",
+		"ie >= 8",
+		"edge >= 15",
+		"ie_mob >= 10",
+		"ff >= 45",
+		"chrome >= 45",
+		"safari >= 7",
+		"opera >= 23",
+		"ios >= 7",
+		"android >= 4",
+		"bb >= 10"
+	]
 }
