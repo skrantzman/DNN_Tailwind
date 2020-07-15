@@ -1,9 +1,8 @@
+![Airplane silhouette with red D N N and blue Tailwind painted on the side](https://raw.githubusercontent.com/skrantzman/DNN_Tailwind/master/images/DNN_Tailwind.png)
+
 ## This project is under development and not ready for production
 
 Started production on 7/14/2020 - 9:00 am pst.
-
-<p align="center"><img src="https://raw.githubusercontent.com/skrantzman/DNN_Tailwind/master/images/DNN_Tailwind.png"alt="XMP Snippets Logo"></p>
-<br />
 
 **DNN_Tailwind**, based on [nvQuickTheme](https://github.com/nvisionative/nvQuickTheme) by nvisionative,
 is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **Tailwind CSS** theme building framework and developer workflow.
