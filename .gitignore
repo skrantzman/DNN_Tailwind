@@ -1,4 +1,7 @@
 node_modules/
 build/
 dist/
+src/scss/tailwind
 yarn-error.log
+prettierrc
+manifest.dnn
