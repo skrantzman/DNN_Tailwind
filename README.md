@@ -15,19 +15,24 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
    ```
    cd DNN_Tailwind
    ```
-3. Install then dependencies need for the framework
+3. Launch VS Code (or your editor of choice)
+   ```
+   code .
+   ```
+   Then open the Terminal window of your code editor for the following steps:
+4. Install then dependencies need for the framework
    ```
    yarn install
    ```
-4. Create/Update the Tailwind CSS files... This will create a new folder under src/scss called tailwind that contains the \_tailwind.scss file.
+5. Create/Update the Tailwind CSS files... This will create a new folder under src/scss called tailwind that contains the \_tailwind.scss file.
    ```
    yarn run build
    ```
-5. Create/Update the projects dist folder and files.
+6. Create/Update the projects dist folder and files.
    ```
    gulp build
    ```
-6. Enable auto updating the dist files every time you save.
+7. Enable auto updating the dist files every time you save.
 
    ```
    gulp watch
@@ -35,7 +40,7 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
 
    At this point you are ready to start customizing the base theme with Tailwind CSS!
 
-7. Once you're satisfied with your theme you can package it up into a dnn skin package with the following command.
+8. Once you're satisfied with your theme you can package it up into a dnn skin package with the following command.
 
    ```
    gulp package
