@@ -35,7 +35,7 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
 
    At this point you are ready to start customizing the base theme with Tailwind CSS!
 
-7. Once your satisived with theme you can package it up into a dnn skin package with the following command.
+7. Once you're satisived with your theme you can package it up into a dnn skin package with the following command.
 
    ```
    gulp package
