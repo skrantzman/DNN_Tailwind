@@ -18,7 +18,7 @@
 
 	<div class="flex flex-col items-center justify-center px-8 mx-auto mt-16 space-y-0 md:max-w-6xl md:space-x-6 md:flex-row">
 		<div id="DoublePaneOneOne" class="w-full md:w-6/12" runat="server"></div>
-		<div id="DoublePaneOneTwo" class="w-full bg- md:w-6/12" runat="server"></div>
+		<div id="DoublePaneOneTwo" class="w-full bg-gray-300 bg- md:w-6/12" runat="server"></div>
 	</div>
 
 	<div class="bg-dnnbrown-500">
