@@ -6,36 +6,30 @@
 
 <!-- Main Content -->
 <main>
-	<div class="bg-dnnblue-400">
-		<div class="flex justify-center">
-			<div id="BannerPane" class="w-full text-center lg:w-8/12" runat="server"></div>
+	<div class="bg-gradient-dk_blue-lt_blue">
+		<div class="flex items-center justify-center w-full max-w-3xl px-8 mx-auto">
+			<div id="BannerPane" class="w-full pt-24 pb-24 text-center hide-if-empty" runat="server"></div>
 		</div>
 	</div>
 
-	<div class="flex justify-center">
-		<div id="ContentPane" class="w-full text-center lg:w-8/12" runat="server"></div>
+	<div class="flex justify-center max-w-3xl px-8 mx-auto mt-16">
+		<div id="ContentPane" class="w-full text-center" runat="server"></div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div id="DoublePaneOneOne" class="col-md-6 cpr-5" runat="server"></div>
-			<div id="DoublePaneOneTwo" class="col-md-6 bg-light-grey cp-5" runat="server"></div>
+	<div class="flex flex-col items-center justify-center px-8 mx-auto mt-16 space-y-0 md:max-w-6xl md:space-x-6 md:flex-row">
+		<div id="DoublePaneOneOne" class="w-full md:w-6/12" runat="server"></div>
+		<div id="DoublePaneOneTwo" class="w-full bg- md:w-6/12" runat="server"></div>
+	</div>
+
+	<div class="bg-dnnbrown-500">
+		<div class="flex flex-col items-center justify-center px-8 mx-auto mt-16 space-y-0 md:max-w-6xl md:space-x-6 md:flex-row">
+			<div id="FullWidthBGDoublePaneOne" class="w-full md:w-6/12" runat="server"></div>
+			<div id="FullWidthBGDoublePaneTwo" class="w-full md:w-6/12" runat="server"></div>
 		</div>
 	</div>
 
-	<div class="container-fluid bg-tertiary">
-		<div class="container">
-			<div class="row align-items-center">
-				<div id="FullWidthBGDoublePaneOne" class="col-md-6 cpy-5" runat="server"></div>
-				<div id="FullWidthBGDoublePaneTwo" class="col-md-6" runat="server"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row justify-content-center">
-			<div id="SinglePaneOne" class="text-center col-md-8" runat="server"></div>
-		</div>
+	<div class="flex justify-center max-w-3xl px-8 mx-auto mt-16">
+		<div id="SinglePaneOne" class="w-full text-center" runat="server"></div>
 	</div>
 </main>
 
