@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+.hide-if-empty:empty {
+	@apply hidden;
+}
+
 @tailwind utilities;
