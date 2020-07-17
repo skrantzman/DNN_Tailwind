@@ -55,8 +55,8 @@
 </g>
 <g id="Layer_3">
 	<rect x="887.218" y="36" display="none" fill="#FFFFFF" width="78" height="7"/>
-	<rect x="851.218" y="100" fill="#FFFFFF" width="78" height="7"/>
-	<rect x="785.218" y="166" fill="#FFFFFF" width="152" height="7"/>
-	<rect x="710.218" y="231" fill="#FFFFFF" width="219" height="7"/>
+	<polygon fill="#CCCCCC" points="997.568,100 831.218,100 831.218,108 989.338,108 	"/>
+	<polygon fill="#CCCCCC" points="959.218,166 753.218,166 753.218,174 951.556,174 959.218,166.687 	"/>
+	<polygon fill="#CCCCCC" points="922.218,231.687 922.218,231 710.218,231 710.218,239 915.318,239 	"/>
 </g>
 </svg>
