@@ -37,10 +37,21 @@ module.exports = {
 					900: "#481314",
 				},
 			},
+			gradients: (theme) => ({
+				"dk_blue-lt_blue": [theme("colors.dnnblue.700"), theme("colors.blue.400")],
+				"blue-green": [theme("colors.blue.500"), theme("colors.green.500")],
+				"purple-blue": [theme("colors.purple.500"), theme("colors.blue.500")],
+			}),
+			minHeight: {
+				"16": "4rem",
+				"32": "8rem",
+				"64": "16rem",
+			},
 		},
 	},
 	variants: {
 		backgroundColor: ["responsive", "hover", "focus", "active"],
+		gradients: ["responsive", "hover"],
 	},
-	plugins: [],
+	plugins: [require("./plugins/gradients")],
 };
