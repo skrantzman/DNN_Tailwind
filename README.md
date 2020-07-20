@@ -11,6 +11,10 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
 
 1. Clone this git to the skins folder of a local DNN development machine accessible by dnndev.me. The default folder name is "DNN_Tailwind", but you can rename this if desired.
 
+   ```
+   git clone https://github.com/skrantzman/DNN_Tailwind.git
+   ```
+
 2. Change directory into DNN_Tailwind folder.
    ```
    cd DNN_Tailwind
