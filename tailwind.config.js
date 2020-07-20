@@ -2,6 +2,9 @@ module.exports = {
 	purge: [],
 	theme: {
 		extend: {
+			fontFamily: {
+				open_sans: ["Open Sans", "Helvetica", "Arial", "sans-serif"],
+			},
 			colors: {
 				dnnblue: {
 					100: "#E6F6FC",
@@ -53,5 +56,5 @@ module.exports = {
 		backgroundColor: ["responsive", "hover", "focus", "active"],
 		gradients: ["responsive", "hover"],
 	},
-	plugins: [require("./plugins/gradients")],
+	plugins: [require("@tailwindcss/typography"), require("./plugins/gradients")],
 };
