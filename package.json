@@ -10,9 +10,10 @@
 	"license": "GPL-3.0",
 	"private": true,
 	"dependencies": {
+		"@tailwindcss/typography": "^0.2.0",
 		"autoprefixer": "^9.8.5",
 		"postcss-cli": "^7.1.1",
-		"tailwindcss": "^1.4.6"
+		"tailwindcss": "^1.5.1"
 	},
 	"devDependencies": {
 		"browser-sync": "^2.26.7",
