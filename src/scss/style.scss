@@ -1,3 +1,5 @@
+@import "tailwind/tailwind";
+
 @import "variables/bs-overrides";
 // @import "autoload/autoload";
 @import "variables/variables";
@@ -6,5 +8,3 @@
 @import "components/components";
 // @import "pages/pages";
 // @import "sections/sections";
-
-@import "tailwind/tailwind";
