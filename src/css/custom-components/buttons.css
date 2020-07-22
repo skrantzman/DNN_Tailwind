@@ -1,0 +1,33 @@
+.btn,
+.btn.split ~ .sub-toggle {
+	@apply inline-block px-3 py-2 mb-0 font-medium leading-5 text-left border-transparent border-solid rounded cursor-pointer font-open_sans;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn-primary,
+.btn.split ~ .sub-toggle,
+.btn.split ~ .split.sub-toggle ~ .sub-toggle {
+	@apply text-white bg-red-600;
+}
+
+.btn:hover {
+	@apply bg-dnnbrown-500;
+}
+
+.btn.split,
+.btn.split ~ .split.sub-toggle {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.btn.split ~ .sub-toggle,
+.btn.split ~ .split.sub-toggle ~ .sub-toggle {
+	@apply ml-px;
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}

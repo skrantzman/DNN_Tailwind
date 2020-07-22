@@ -1,0 +1,281 @@
+/* Main Navigation */
+.nav-main {
+	@apply relative justify-between;
+}
+
+.nav-main a[id*="dnnLOGO"] {
+	@apply p-4;
+}
+
+.nav-main a[id*="dnnLOGO"] img {
+	@apply w-auto h-8 max-h-full;
+	@screen sm {
+		@apply h-12;
+	}
+}
+
+.nav-main nav {
+	@apply flex items-center;
+}
+
+/* User Controls */
+.user-controls > ul {
+	@apply inline-flex p-1 m-0;
+}
+
+.user-controls > ul > li {
+	@apply inline-flex items-center;
+}
+
+.user-controls > ul > li + li {
+	@apply ml-4;
+}
+
+.user-controls > ul > li a {
+	@apply inline-flex p-1 font-semibold leading-6 text-white;
+}
+
+.user-controls > ul > li a:hover,
+.user-controls > ul > li a:focus {
+	@apply text-dnnblue-500;
+}
+
+.user-controls > ul > li input {
+	@apply p-1 border-2 border-solid rounded border-dnnbrown-500;
+}
+
+.user-controls > ul > li .dnnSearchBoxClearText {
+	@apply top-0 h-full m-0;
+}
+
+#dnn_dnnSearch_txtSearch {
+	@apply w-24;
+	@screen md {
+		@apply w-48;
+	}
+}
+
+/* Mobile Wrapper */
+.menu-collapser {
+	@apply relative w-full h-full bg-indigo-800;
+}
+
+/* Mobile Button */
+.collapse-button {
+	@apply absolute flex items-center justify-center w-12 h-12 p-2 text-3xl text-center bg-white bg-opacity-75 cursor-pointer text-dnnbrown-500;
+	right: 15px;
+	top: 50%;
+	transform: translate(0, -50%);
+	transition: all 0.3s ease;
+}
+
+.collapse-button:hover,
+.collapse-button:focus {
+	@apply text-dnnred-500;
+}
+
+/* Menu Styling */
+nav ul {
+	@apply p-0 m-0 list-none;
+}
+
+nav ul.slimmenu {
+	/* Desktop Top Level */
+	/* Normal Menu Style */
+	/* Mobile Menu Style */
+}
+
+nav ul.slimmenu > li {
+	@apply relative inline-flex items-stretch;
+}
+
+nav ul.slimmenu > li + li {
+	@apply ml-3;
+}
+
+nav ul.slimmenu .sub-toggle {
+	@apply inline-flex items-center justify-center w-8 h-auto cursor-pointer;
+}
+
+nav ul.slimmenu .sub-toggle:before {
+	display: inline-block;
+	content: "";
+	color: white;
+	margin-top: 0.15em;
+	border-top: 0.3em solid;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+	transition: 0.25s ease all;
+}
+
+nav ul.slimmenu.normal > li > ul {
+	@apply absolute left-0 hidden w-auto rounded bg-dnnbrown-500;
+	top: calc(100% + 1px);
+	z-index: 999;
+}
+
+nav ul.slimmenu.normal > li > ul li {
+	@apply relative flex font-semibold;
+}
+
+nav ul.slimmenu.normal > li > ul li:first-child a {
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+}
+
+nav ul.slimmenu.normal > li > ul li:first-child .sub-toggle {
+	border-top-right-radius: 0.25em;
+}
+
+nav ul.slimmenu.normal > li > ul li:last-child a {
+	border-bottom-left-radius: 0.25em;
+	border-bottom-right-radius: 0.25em;
+}
+
+nav ul.slimmenu.normal > li > ul li:last-child .sub-toggle {
+	border-bottom-right-radius: 0.25em;
+}
+
+nav ul.slimmenu.normal > li > ul li:first-child a.split,
+nav ul.slimmenu.normal > li > ul li:last-child a.split {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+nav ul.slimmenu.normal > li > ul a {
+	@apply flex-grow px-5 py-3 text-white whitespace-no-wrap;
+}
+
+nav ul.slimmenu.normal > li > ul a:hover,
+nav ul.slimmenu.normal > li > ul a:focus {
+	@apply font-semibold text-white bg-dnnred-500;
+}
+
+nav ul.slimmenu.normal > li > ul > li {
+	/* Under 2 */
+}
+
+nav ul.slimmenu.normal > li > ul > li ul {
+	@apply absolute top-0 hidden whitespace-no-wrap rounded bg-dnnbrown-500;
+	left: calc(100% + 1px);
+	z-index: 999;
+}
+
+nav ul.slimmenu.normal > li > ul .sub-toggle {
+	@apply w-12;
+}
+
+nav ul.slimmenu.normal > li > ul .sub-toggle:before {
+	display: inline-block;
+	content: "";
+	color: white;
+	border-top: 0.3em solid transparent;
+	border-right: 0;
+	border-bottom: 0.3em solid transparent;
+	border-left: 0.3em solid;
+}
+
+nav ul.slimmenu.normal > li > ul .sub-toggle:hover,
+nav ul.slimmenu.normal > li > ul .sub-toggle:focus {
+	@apply bg-dnnred-500;
+}
+
+nav ul.slimmenu.collapsed {
+	@apply absolute right-0 hidden w-auto mt-10 mr-4 rounded bg-dnnbrown-500;
+	top: calc(100% + 1px);
+	z-index: 999;
+	min-width: 250px;
+}
+
+nav ul.slimmenu.collapsed li {
+	@apply relative flex flex-col;
+}
+
+nav ul.slimmenu.collapsed li + li {
+	@apply m-0;
+}
+
+nav ul.slimmenu.collapsed a {
+	@apply flex-grow py-3 pl-5 pr-16 text-left text-white whitespace-no-wrap bg-transparent border-none rounded-none;
+}
+
+nav ul.slimmenu.collapsed a:hover,
+nav ul.slimmenu.collapsed a:focus {
+	@apply bg-dnnred-500 !important;
+	/* background-color: #ff0000 !important; */
+}
+
+nav ul.slimmenu.collapsed a.btn.single:after {
+	@apply hidden;
+}
+
+nav ul.slimmenu.collapsed a.btn.single ~ .sub-toggle {
+	@apply flex;
+}
+
+nav ul.slimmenu.collapsed > li {
+	/* Under 2 */
+}
+
+nav ul.slimmenu.collapsed > li ul {
+	@apply relative hidden w-full rounded-none bg-dnnbrown-500;
+}
+
+nav ul.slimmenu.collapsed > li ul > li {
+	/* Under 3 */
+}
+
+nav ul.slimmenu.collapsed > li ul > li a {
+	@apply pl-8;
+}
+
+nav ul.slimmenu.collapsed > li ul > li ul {
+	@apply relative left-auto;
+}
+
+nav ul.slimmenu.collapsed > li ul > li ul > li {
+	/* Under 4 */
+}
+
+nav ul.slimmenu.collapsed > li ul > li ul > li a {
+	@apply pl-10;
+}
+
+nav ul.slimmenu.collapsed > li ul > li ul > li ul {
+	@apply relative left-auto;
+}
+
+nav ul.slimmenu.collapsed > li ul > li ul > li ul > li a {
+	@apply pl-12;
+	/* padding-left: 50px; */
+}
+
+nav ul.slimmenu.collapsed .sub-toggle {
+	@apply absolute top-0 right-0 w-10 h-10 mt-px border border-solid rounded-none bg-dnnbrown-500 border-dnnred-500;
+}
+
+nav ul.slimmenu.collapsed .sub-toggle:before {
+	display: inline-block;
+	content: "";
+	color: white;
+	border-top: 0.3em solid transparent;
+	border-right: 0;
+	border-bottom: 0.3em solid transparent;
+	border-left: 0.3em solid;
+}
+
+nav ul.slimmenu.collapsed .sub-toggle:hover,
+nav ul.slimmenu.collapsed .sub-toggle:focus {
+	@apply bg-dnnred-500 !important;
+	/* background-color: #ff0000 !important; */
+}
+
+nav ul.slimmenu.collapsed .sub-toggle.expanded {
+	@apply bg-dnnred-500;
+}
+
+nav ul.slimmenu.collapsed .sub-toggle.expanded:before {
+	@apply transform rotate-90;
+	/* transform: rotate(90deg); */
+}
