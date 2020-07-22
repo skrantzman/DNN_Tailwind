@@ -1,5 +1,5 @@
 .btn {
-	@apply inline-block px-3 py-2 mb-0 font-medium leading-5 text-left border-transparent border-solid rounded-sm cursor-pointer font-open_sans;
+	@apply inline-block px-3 py-2 mb-0 font-medium leading-5 text-left border-transparent border-solid rounded cursor-pointer font-open_sans;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
 	-webkit-user-select: none;
