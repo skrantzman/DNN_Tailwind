@@ -4,7 +4,7 @@
 	"description": "DNN Tailwind Base Theme",
 	"main": "gulpfile.js",
 	"scripts": {
-		"build": "postcss css/tailwind.css -o src/scss/tailwind/_tailwind.scss"
+		"build": "postcss src/css/tailwind.css -o src/scss/tailwind/_tailwind.scss"
 	},
 	"author": "Steve Krantzman",
 	"license": "GPL-3.0",
