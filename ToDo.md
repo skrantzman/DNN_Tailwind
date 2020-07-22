@@ -2,7 +2,7 @@
 
 ## Styling
 
-- [ x ] Style default.axcx with Tailwind classes and its partials.
+- [x] Style default.axcx with Tailwind classes and its partials.
   - [ x ] \_footer.ascx
   - [ x ] \_header.ascx
 - [ ] Style any container ascx files
