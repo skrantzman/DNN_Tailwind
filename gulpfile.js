@@ -1,5 +1,13 @@
+const { func } = require("assert-plus");
+
 var bs = require("browser-sync").create(),
 	gulp = require("gulp"),
+	postcss = require("gulp-postcss"),
+	tailwindcss = require("tailwindcss"),
+	cssvars = require("postcss-simple-vars"),
+	nested = require("postcss-nested"),
+	cssImport = require("postcss-import"),
+	autoprefixer = require("autoprefixer"),
 	jshint = require("gulp-jshint"),
 	sass = require("gulp-sass"),
 	imagemin = require("gulp-imagemin"),
@@ -34,6 +42,10 @@ var paths = {
 	images: {
 		src: "./src/images/**/*.{jpg,jpeg,png,gif,svg}",
 		dest: "./dist/images/",
+	},
+	tailwind: {
+		src: "./src/css/tailwind.css",
+		dest: "./src/scss/tailwind/",
 	},
 	styles: {
 		src: "./src/scss/**/*.scss",
@@ -125,20 +137,32 @@ function images() {
 /*------------------------------------------------------*/
 
 /*------------------------------------------------------*/
+/* TAILWIND TASKS -------------------------------------*/
+/*------------------------------------------------------*/
+
+function tailwind() {
+	return gulp
+		.src(paths.tailwind.src)
+		.pipe(postcss([cssImport, tailwindcss, cssvars, nested, autoprefixer]))
+		.pipe(gulp.dest(paths.tailwind.dest));
+}
+
+/*------------------------------------------------------*/
+/* END TAILWIND TASKS -------------------------------------*/
+/*------------------------------------------------------*/
+
+/*------------------------------------------------------*/
 /* STYLES TASKS ----------------------------------------*/
 /*------------------------------------------------------*/
 // Compile custom SCSS to CSS and copy to dist/css
 function styles() {
-	return (
-		gulp
-			.src(paths.styles.src, { sourcemaps: true })
-			.pipe(sass({ includePaths: ["./node_modules"] }, { outputStyle: "compressed" }).on("error", sass.logError))
-			.pipe(cleanCSS())
-			.pipe(rename({ suffix: ".min" }))
-			// .pipe(autoprefixer())
-			.pipe(gulp.dest(paths.styles.dest, { sourcemaps: "." }))
-			.pipe(notify({ message: "<%= file.relative %> compiled and distributed!", title: "styles", sound: false }))
-	);
+	return gulp
+		.src(paths.styles.src, { sourcemaps: true })
+		.pipe(sass({ includePaths: ["./node_modules"] }, { outputStyle: "compressed" }).on("error", sass.logError))
+		.pipe(cleanCSS())
+		.pipe(rename({ suffix: ".min" }))
+		.pipe(gulp.dest(paths.styles.dest, { sourcemaps: "." }))
+		.pipe(notify({ message: "<%= file.relative %> compiled and distributed!", title: "styles", sound: false }));
 }
 /*------------------------------------------------------*/
 /* END STYLES TASKS ------------------------------------*/
@@ -283,6 +307,7 @@ function serve() {
 // gulp watch
 function watch() {
 	gulp.watch(paths.images.src, images);
+	gulp.watch(paths.tailwind.src, tailwind);
 	gulp.watch(paths.styles.src, styles);
 	gulp.watch(paths.scripts.src, scripts);
 	gulp.watch(paths.containers.src, containers);
@@ -292,7 +317,7 @@ function watch() {
 var init = gulp.series(fontsInit, slimMenuInit);
 
 // gulp build
-var build = gulp.series(cleandist, init, styles, scripts, images, containers, manifest);
+var build = gulp.series(cleandist, init, tailwind, styles, scripts, images, containers, manifest);
 
 // gulp package
 var package = gulp.series(build, ziptemp, zippackage, cleantemp);
@@ -307,6 +332,7 @@ var package = gulp.series(build, ziptemp, zippackage, cleantemp);
 exports.fontsInit = fontsInit;
 exports.slimMenuInit = slimMenuInit;
 exports.images = images;
+exports.tailwind = tailwind;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.containers = containers;
