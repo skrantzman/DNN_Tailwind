@@ -3,34 +3,33 @@
 	"version": "2.2.0",
 	"description": "DNN Tailwind Base Theme",
 	"main": "gulpfile.js",
-	"scripts": {
-		"build": "postcss src/css/tailwind.css -o src/scss/tailwind/_tailwind.scss"
-	},
+	"scripts": {},
 	"author": "Steve Krantzman",
 	"license": "GPL-3.0",
 	"private": true,
 	"dependencies": {
 		"@tailwindcss/typography": "^0.2.0",
-		"autoprefixer": "^9.8.5",
-		"postcss-cli": "^7.1.1",
-		"postcss-import": "^12.0.1",
 		"tailwindcss": "^1.5.1"
 	},
 	"devDependencies": {
+		"autoprefixer": "^9.8.5",
 		"browser-sync": "^2.26.7",
 		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "^6.0.0",
 		"gulp-clean": "^0.4.0",
 		"gulp-clean-css": "^4.0.0",
 		"gulp-imagemin": "^5.0.3",
 		"gulp-jshint": "2.x",
 		"gulp-notify": "^3.0.0",
+		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^1.2.2",
 		"gulp-replace": "^1.0.0",
 		"gulp-sass": "^4.0.2",
 		"gulp-uglify": "^3.0.0",
 		"gulp-zip": "^4.1.0",
-		"jshint": "^2.9.5"
+		"jshint": "^2.9.5",
+		"postcss-import": "^12.0.1",
+		"postcss-nested": "^4.2.3",
+		"postcss-simple-vars": "^5.0.2"
 	},
 	"browserslist": [
 		"> 1%",
