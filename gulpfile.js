@@ -342,12 +342,16 @@ function watch() {
 var init = gulp.series(fontsInit, slimMenuInit);
 
 // gulp build
-var build = gulp.series(cleandist, init, tailwind, purge, styles, scripts, images, containers, manifest);
+var build = gulp.series(cleandist, init, tailwind, styles, scripts, images, containers, manifest);
 
-//gulp build&purge
+//gulp purge_build
+var build_p = gulp.series(cleandist, init, tailwind, purge, styles, scripts, images, containers, manifest);
 
 // gulp package
 var package = gulp.series(build, ziptemp, zippackage, cleantemp);
+
+// gulp purge_package
+var package_p = gulp.series(build_p, ziptemp, zippackage, cleantemp);
 
 // gulp purge
 var purge = gulp.series(purge);
@@ -383,7 +387,9 @@ exports.serve = serve;
 exports.watch = watch;
 exports.init = init;
 exports.build = build;
+exports.build_p = build_p;
 exports.package = package;
+exports.package_p = package_p;
 
 // Define default task that can be called by just running `gulp` from cli
 exports.default = build;
