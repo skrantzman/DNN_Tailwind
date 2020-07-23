@@ -1,3 +1,1 @@
-.hide-if-empty:empty {
-	@apply hidden;
-}
+@import "helper.css";
