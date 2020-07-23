@@ -1,0 +1,133 @@
+.dnnLogin {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.dnnLogin > div {
+	width: 100%;
+	padding: 0;
+}
+
+.dnnLogin .LoginPanel {
+	width: 100%;
+	padding: 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem .dnnFormLabel {
+	display: none;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(1),
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(1) .dnnFormLabel,
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(2) .dnnFormLabel {
+	display: block;
+	float: left;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(1) .dnnFormLabel::after,
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(2) .dnnFormLabel::after {
+	clear: both;
+	content: "";
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(1) label,
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(2) label {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(1) input,
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(2) input {
+	min-width: 100%;
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 0.25em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(3) {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.5em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(3) a {
+	width: 50%;
+	margin: 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(3) a.dnnPrimaryAction {
+	margin-right: 0.25em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:nth-child(3) a.dnnSecondaryAction {
+	margin-left: 0.25em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem .dnnLoginRememberMe {
+	display: block;
+	margin: 1em 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem .dnnLoginRememberMe img {
+	margin: 0;
+	padding: 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem .dnnLoginRememberMe .dnnCheckbox {
+	margin: 1em 0;
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem .dnnLoginRememberMe label {
+	margin-left: 0.5em;
+	font-size: 1.25rem;
+	font-weight: 550;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child {
+	width: 100%;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions {
+	width: 100%;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions li {
+	width: 50%;
+	margin: 0;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions li:nth-child(1) {
+	padding-right: 0.25em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions li:nth-child(2) {
+	padding-left: 0.25em;
+}
+
+.dnnLogin .LoginPanel .dnnFormItem:last-child .dnnLoginActions a {
+	width: 100%;
+}
+
+.hiddenLogin {
+	bottom: 0;
+	display: none;
+	height: 25px;
+	left: 0;
+	position: fixed;
+	text-indent: -1000px;
+	width: 25px;
+}
