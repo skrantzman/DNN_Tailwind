@@ -344,13 +344,13 @@ var init = gulp.series(fontsInit, slimMenuInit);
 // gulp build
 var build = gulp.series(cleandist, init, tailwind, styles, scripts, images, containers, manifest);
 
-//gulp purge_build
+//gulp build_p
 var build_p = gulp.series(cleandist, init, tailwind, purge, styles, scripts, images, containers, manifest);
 
 // gulp package
 var package = gulp.series(build, ziptemp, zippackage, cleantemp);
 
-// gulp purge_package
+// gulp package_p
 var package_p = gulp.series(build_p, ziptemp, zippackage, cleantemp);
 
 // gulp purge
