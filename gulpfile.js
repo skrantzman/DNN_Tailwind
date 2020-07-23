@@ -43,6 +43,9 @@ var paths = {
 		src: "./src/images/**/*.{jpg,jpeg,png,gif,svg}",
 		dest: "./dist/images/",
 	},
+	stylescss: {
+		src: "./src/css/**/*.css",
+	},
 	tailwind: {
 		src: "./src/css/tailwind.css",
 		dest: "./src/scss/tailwind/",
@@ -299,6 +302,7 @@ function serve() {
 		proxy: "nvQuickTheme.loc",
 	});
 	gulp.watch(paths.images.src, images).on("change", bs.reload);
+	gulp.watch(paths.stylescss.src, gulp.series(tailwind, styles)).on("change", bs.reload);
 	gulp.watch(paths.styles.src, styles).on("change", bs.reload);
 	gulp.watch(paths.scripts.src, scripts).on("change", bs.reload);
 	gulp.watch(paths.containers.src, containers).on("change", bs.reload);
@@ -307,7 +311,7 @@ function serve() {
 // gulp watch
 function watch() {
 	gulp.watch(paths.images.src, images);
-	gulp.watch(paths.tailwind.src, tailwind);
+	gulp.watch(paths.stylescss.src, gulp.series(tailwind, styles));
 	gulp.watch(paths.styles.src, styles);
 	gulp.watch(paths.scripts.src, scripts);
 	gulp.watch(paths.containers.src, containers);
