@@ -3,11 +3,12 @@ const { func } = require("assert-plus");
 var bs = require("browser-sync").create(),
 	gulp = require("gulp"),
 	postcss = require("gulp-postcss"),
-	tailwindcss = require("tailwindcss"),
 	cssvars = require("postcss-simple-vars"),
 	nested = require("postcss-nested"),
 	cssImport = require("postcss-import"),
+	tailwindcss = require("tailwindcss"),
 	autoprefixer = require("autoprefixer"),
+	purgecss = require("@fullhuman/postcss-purgecss"),
 	jshint = require("gulp-jshint"),
 	sass = require("gulp-sass"),
 	imagemin = require("gulp-imagemin"),
@@ -48,11 +49,15 @@ var paths = {
 	},
 	tailwind: {
 		src: "./src/css/tailwind.css",
-		dest: "./src/scss/tailwind/",
+		dest: "./src/css/",
 	},
 	styles: {
-		src: "./src/scss/**/*.scss",
+		src: "./src/css/style.css",
 		dest: "./dist/css/",
+	},
+	purge: {
+		src: "./src/css/style.css",
+		dest: "./src/css/",
 	},
 	scripts: {
 		src: "./src/js/*.js",
@@ -142,12 +147,28 @@ function images() {
 /*------------------------------------------------------*/
 /* TAILWIND TASKS -------------------------------------*/
 /*------------------------------------------------------*/
-
+// Create tailwind css file and add prefixes.
 function tailwind() {
 	return gulp
 		.src(paths.tailwind.src)
 		.pipe(postcss([cssImport, tailwindcss, cssvars, nested, autoprefixer]))
+		.pipe(rename("style.css"))
 		.pipe(gulp.dest(paths.tailwind.dest));
+}
+
+// Purge unused tailwind classes for css file
+function purge() {
+	return gulp
+		.src(paths.purge.src)
+		.pipe(
+			postcss([
+				purgecss({
+					content: ["./**/*.html", "./**/*.ascx"],
+					defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+				}),
+			])
+		)
+		.pipe(gulp.dest(paths.purge.dest));
 }
 
 /*------------------------------------------------------*/
@@ -321,10 +342,19 @@ function watch() {
 var init = gulp.series(fontsInit, slimMenuInit);
 
 // gulp build
-var build = gulp.series(cleandist, init, tailwind, styles, scripts, images, containers, manifest);
+var build = gulp.series(cleandist, init, tailwind, purge, styles, scripts, images, containers, manifest);
+
+//gulp build&purge
 
 // gulp package
 var package = gulp.series(build, ziptemp, zippackage, cleantemp);
+
+// gulp purge
+var purge = gulp.series(purge);
+
+// gulp tailwind
+var tailwind = gulp.series(tailwind);
+
 /*------------------------------------------------------*/
 /* END DEV TASKS ---------------------------------------*/
 /*------------------------------------------------------*/
@@ -338,6 +368,7 @@ exports.slimMenuInit = slimMenuInit;
 exports.images = images;
 exports.tailwind = tailwind;
 exports.styles = styles;
+exports.purge = purge;
 exports.scripts = scripts;
 exports.containers = containers;
 exports.manifest = manifest;
