@@ -163,7 +163,13 @@ function purge() {
 		.pipe(
 			postcss([
 				purgecss({
-					content: ["./**/*.html", "./**/*.ascx"],
+					content: [
+						"./**/*.html",
+						"./**/*.ascx",
+						"./src/css/custom-components/*.css",
+						"./src/css/custom-layouts/*.css",
+						"./src/css/dnn-base-styles/*.css",
+					],
 					defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 				}),
 			])
