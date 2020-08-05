@@ -39,9 +39,11 @@ module.exports = {
 					800: "#6C1C1E",
 					900: "#481314",
 				},
+				dkblue: "#007ca9",
+				ltblue: "#48ceff",
 			},
 			gradients: (theme) => ({
-				"dk_blue-lt_blue": [theme("colors.dnnblue.700"), theme("colors.blue.400")],
+				"dk_blue-lt_blue": [theme("colors.dkblue"), theme("colors.ltblue")],
 				"blue-green": [theme("colors.blue.500"), theme("colors.green.500")],
 				"purple-blue": [theme("colors.purple.500"), theme("colors.blue.500")],
 			}),
