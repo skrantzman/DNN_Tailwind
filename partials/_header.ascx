@@ -1,6 +1,6 @@
 <header class="bg-gray-300">
 	<div class="flex items-center h-12 bg-dnnbrown-500">
-		<div class="container mx-auto">
+		<div class="w-full max-w-6xl mx-auto">
 			<div class="flex justify-end user-controls">
 				<ul>
 					<li><dnn:Login runat="server" id="dnnLogin" /></li>
@@ -12,7 +12,7 @@
 		</div>
 	</div>
 
-	<div class="container flex items-center justify-between py-4 mx-auto">
+	<div class="flex items-center justify-between w-full max-w-6xl py-4 mx-auto">
 		<div class="ml-4">
 			<dnn:LOGO id="dnnLOGO" runat="server" CssClass="h-10 sm:h-12" />
 		</div>
