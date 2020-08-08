@@ -1,5 +1,5 @@
 <header class="bg-gray-300">
-	<div class="flex items-center h-12 bg-dnnbrown-500">
+	<div class="flex items-center h-12 bg-tertiary">
 		<div class="w-full max-w-6xl mx-auto">
 			<div class="flex justify-end user-controls">
 				<ul>

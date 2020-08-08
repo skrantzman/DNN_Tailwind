@@ -37,11 +37,11 @@
 
 .user-controls > ul > li a:hover,
 .user-controls > ul > li a:focus {
-	@apply text-dnnblue-500;
+	@apply text-secondary;
 }
 
 .user-controls > ul > li input {
-	@apply p-1 border-2 border-solid rounded border-dnnbrown-500;
+	@apply p-1 border-2 border-solid rounded border-tertiary;
 }
 
 .user-controls > ul > li .dnnSearchBoxClearText {
@@ -62,7 +62,7 @@
 
 /* Mobile Button */
 .collapse-button {
-	@apply absolute flex items-center justify-center w-12 h-12 p-2 text-3xl text-center bg-white bg-opacity-75 cursor-pointer text-dnnbrown-500;
+	@apply absolute flex items-center justify-center w-12 h-12 p-2 text-3xl text-center bg-white bg-opacity-75 cursor-pointer text-tertiary;
 	right: 15px;
 	top: 50%;
 	transform: translate(0, -50%);
@@ -71,7 +71,7 @@
 
 .collapse-button:hover,
 .collapse-button:focus {
-	@apply text-dnnred-500;
+	@apply text-primary;
 }
 
 /* Menu Styling */
@@ -110,7 +110,7 @@ nav ul.slimmenu .sub-toggle:before {
 }
 
 nav ul.slimmenu.normal > li > ul {
-	@apply absolute left-0 hidden w-auto rounded bg-dnnbrown-500;
+	@apply absolute left-0 hidden w-auto rounded bg-tertiary;
 	top: calc(100% + 1px);
 	z-index: 999;
 }
@@ -149,7 +149,7 @@ nav ul.slimmenu.normal > li > ul a {
 
 nav ul.slimmenu.normal > li > ul a:hover,
 nav ul.slimmenu.normal > li > ul a:focus {
-	@apply font-semibold text-white bg-dnnred-500;
+	@apply font-semibold text-white bg-primary;
 }
 
 nav ul.slimmenu.normal > li > ul > li {
@@ -157,7 +157,7 @@ nav ul.slimmenu.normal > li > ul > li {
 }
 
 nav ul.slimmenu.normal > li > ul > li ul {
-	@apply absolute top-0 hidden whitespace-no-wrap rounded bg-dnnbrown-500;
+	@apply absolute top-0 hidden whitespace-no-wrap rounded bg-tertiary;
 	left: calc(100% + 1px);
 	z-index: 999;
 }
@@ -178,11 +178,11 @@ nav ul.slimmenu.normal > li > ul .sub-toggle:before {
 
 nav ul.slimmenu.normal > li > ul .sub-toggle:hover,
 nav ul.slimmenu.normal > li > ul .sub-toggle:focus {
-	@apply bg-dnnred-500;
+	@apply bg-primary;
 }
 
 nav ul.slimmenu.collapsed {
-	@apply absolute right-0 hidden w-auto mt-10 mr-4 rounded bg-dnnbrown-500;
+	@apply absolute right-0 hidden w-auto mt-10 mr-4 rounded bg-tertiary;
 	top: calc(100% + 1px);
 	z-index: 999;
 	min-width: 250px;
@@ -202,7 +202,7 @@ nav ul.slimmenu.collapsed a {
 
 nav ul.slimmenu.collapsed a:hover,
 nav ul.slimmenu.collapsed a:focus {
-	@apply bg-dnnred-500 !important;
+	@apply bg-primary !important;
 	/* background-color: #ff0000 !important; */
 }
 
@@ -219,7 +219,7 @@ nav ul.slimmenu.collapsed > li {
 }
 
 nav ul.slimmenu.collapsed > li ul {
-	@apply relative hidden w-full rounded-none bg-dnnbrown-500;
+	@apply relative hidden w-full rounded-none bg-tertiary;
 }
 
 nav ul.slimmenu.collapsed > li ul > li {
@@ -252,7 +252,7 @@ nav ul.slimmenu.collapsed > li ul > li ul > li ul > li a {
 }
 
 nav ul.slimmenu.collapsed .sub-toggle {
-	@apply absolute top-0 right-0 w-10 h-10 mt-px border border-solid rounded-none bg-dnnbrown-500 border-dnnred-500;
+	@apply absolute top-0 right-0 w-10 h-10 mt-px border border-solid rounded-none bg-tertiary border-primary;
 }
 
 nav ul.slimmenu.collapsed .sub-toggle:before {
@@ -267,12 +267,12 @@ nav ul.slimmenu.collapsed .sub-toggle:before {
 
 nav ul.slimmenu.collapsed .sub-toggle:hover,
 nav ul.slimmenu.collapsed .sub-toggle:focus {
-	@apply bg-dnnred-500 !important;
+	@apply bg-primary !important;
 	/* background-color: #ff0000 !important; */
 }
 
 nav ul.slimmenu.collapsed .sub-toggle.expanded {
-	@apply bg-dnnred-500;
+	@apply bg-primary;
 }
 
 nav ul.slimmenu.collapsed .sub-toggle.expanded:before {
