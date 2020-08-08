@@ -41,6 +41,9 @@ module.exports = {
 				},
 				dkblue: "#007ca9",
 				ltblue: "#48ceff",
+				primary: "var(--color-primary)",
+				secondary: "var(--color-secondary)",
+				tertiary: "var(--color-tertiary)",
 			},
 			gradients: (theme) => ({
 				"dk_blue-lt_blue": [theme("colors.dkblue"), theme("colors.ltblue")],
@@ -50,6 +53,7 @@ module.exports = {
 			minHeight: {
 				"16": "4rem",
 				"32": "8rem",
+				"40": "10rem",
 				"64": "16rem",
 			},
 		},
