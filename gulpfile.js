@@ -10,7 +10,6 @@ var bs = require("browser-sync").create(),
 	autoprefixer = require("autoprefixer"),
 	purgecss = require("@fullhuman/postcss-purgecss"),
 	jshint = require("gulp-jshint"),
-	sass = require("gulp-sass"),
 	imagemin = require("gulp-imagemin"),
 	rename = require("gulp-rename"),
 	uglify = require("gulp-uglify"),
@@ -46,6 +45,9 @@ var paths = {
 	},
 	stylescss: {
 		src: "./src/css/**/!(style.css)*.css",
+	},
+	dnn: {
+		src: "./**/*.ascx",
 	},
 	tailwind: {
 		src: "./src/css/tailwind.css",
@@ -188,7 +190,6 @@ function purge() {
 function styles() {
 	return gulp
 		.src(paths.styles.src, { sourcemaps: true })
-		.pipe(sass({ includePaths: ["./node_modules"] }, { outputStyle: "compressed" }).on("error", sass.logError))
 		.pipe(cleanCSS())
 		.pipe(rename({ suffix: ".min" }))
 		.pipe(gulp.dest(paths.styles.dest, { sourcemaps: "." }))
@@ -326,8 +327,9 @@ function cleantemp() {
 //gulp serve
 function serve() {
 	bs.init({
-		proxy: "nvQuickTheme.loc",
+		proxy: "theme.dnndev.me",
 	});
+	gulp.watch(paths.dnn.src).on("change", bs.reload);
 	gulp.watch(paths.images.src, images).on("change", bs.reload);
 	gulp.watch(paths.stylescss.src, gulp.series(tailwind)).on("change", bs.reload);
 	gulp.watch(paths.styles.src, styles).on("change", bs.reload);
