@@ -10,6 +10,8 @@
 **DNN_Tailwind**, based on [nvQuickTheme](https://github.com/nvisionative/nvQuickTheme) by nvisionative,
 is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **Tailwind CSS** theme building framework and developer workflow.
 
+[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json)
+
 ## Instalation Instructions
 
 1. Clone this git to the skins folder of a local DNN development machine accessible by dnndev.me. The default folder name is "DNN_Tailwind", but you can rename this if desired.
