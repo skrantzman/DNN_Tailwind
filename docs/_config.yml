@@ -2,3 +2,5 @@
 
 title: "Jekyll Actions Demo"
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-sitemap
