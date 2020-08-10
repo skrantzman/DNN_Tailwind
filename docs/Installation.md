@@ -4,6 +4,16 @@ title: Installation
 permalink: /Installation
 ---
 
+## Prerequisites
+
+There are thre prerequisites for working with DNN_Tailwind:
+
+- Node
+- Yarn
+- Gulp
+
+If you have these installed skip to DNN_Tailwind Installation section below, otherwise install them in the order listed.
+
 ### Install Node
 
 Node is a server framework that we use to keep track of all our dependencies and help run our scripts. Head over to [https://nodejs.org/en/](https://nodejs.org/en/) to find out how to install Node.
@@ -25,6 +35,8 @@ Refer to the [yarn installation page](https://yarnpkg.com/en/docs/install) for d
 Gulp is our task script manager and executor. In order for us to run this on command line in any project we're doing, from the node command line, you will need to run: `npm install gulp -g`. This will install Gulp globally on your machine. Note that if you run several installations of nvQuickTheme, you will only need to run this command on the first install.
 
 ---
+
+## DNN_Tailwind installation
 
 ### Clone Repository
 
