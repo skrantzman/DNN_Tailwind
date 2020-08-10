@@ -1,1 +1,8 @@
-**Dnn_Tailwind** is more than just a great minimalist DNN (DotNetNuke) theme.  It is a powerful theme building framework and developer workflow.  This "starter solution" was made with developer efficiency and the ultimate DNN theme performance in mind.  Most DNN themes in the marketplace today are loaded with bloat, which can make theming a pain, and for someone new to DNN, almost impossible.  Our [documentation](https://skrantzman.github.io/DNN_Tailwind/) will outline basic usage, modification, and advanced usage of this framework and developer workflow.
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+**Dnn_Tailwind** is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful theme building framework and developer workflow. This "starter solution" was made with developer efficiency and the ultimate DNN theme performance in mind. Most DNN themes in the marketplace today are loaded with bloat, which can make theming a pain, and for someone new to DNN, almost impossible. Our [documentation](https://skrantzman.github.io/DNN_Tailwind/) will outline basic usage, modification, and advanced usage of this framework and developer workflow.
