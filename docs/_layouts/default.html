@@ -36,10 +36,12 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+     <div class="col-md-8">
       <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
       {{ content }}
-
-        <aside id="sidebar">
+      </div>
+      
+        <aside id="sidebar" class="col-md-4">
           {% for item in site.data.nav.menu %}
             <h3>{{ item.title }}</h3>
               <ul>
