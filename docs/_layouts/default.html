@@ -33,8 +33,11 @@
 
     <div id="content-wrapper">
       <div class="clearfix inner">
-        <section id="main-content">
+        <scetion id="page-title">
           <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
+        </scetion>
+        
+        <section id="main-content">          
           {{ content }}
         </section>
 
