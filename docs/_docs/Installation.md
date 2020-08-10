@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /installation
+---
+
 ## Istallation
 
 ### Install Node
