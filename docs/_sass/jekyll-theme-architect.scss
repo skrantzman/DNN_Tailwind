@@ -73,10 +73,6 @@ header h2 {
 	max-width: 100%;
 }
 
-.project-name {
-	font-size: 28px;
-}
-
 aside#sidebar {
 	float: right;
 	width: 200px;
@@ -334,6 +330,10 @@ footer a {
 }
 footer a:hover {
 	color: #444;
+}
+
+.project-name h2 {
+	font-size: 32px;
 }
 
 /* MISC */
