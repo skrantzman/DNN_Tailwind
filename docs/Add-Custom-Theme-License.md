@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /Add-Custome-Theme-License
+permalink: /Add-Custom-Theme-License
 ---
 
 ## Add Custom Theme License

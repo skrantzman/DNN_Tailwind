@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /Add-Custome-Theme-Release-Notes
+permalink: /Add-Custom-Theme-Release-Notes
 ---
 
 ## Add Custom Theme Release Notes

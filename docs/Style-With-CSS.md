@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /CSS
+permalink: /Style-With-CSS
 ---
 
 ### CSS
