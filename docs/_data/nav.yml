@@ -2,28 +2,28 @@ menu:
   - title: Table of Contents
     subfolderitems:
       - page: Home
-        url: /nvQuickTheme/
+        url: /DNN_Tailwind/
       - page: Installation
-        url: /nvQuickTheme/Installation.html
+        url: /DNN_Tailwind/Installation.html
       - page: Project Setup
-        url: /nvQuickTheme/Project-Setup.html
+        url: /DNN_Tailwind/Project-Setup.html
       - page: Commands
-        url: /nvQuickTheme/Commands.html
+        url: /DNN_Tailwind/Commands.html
   - title: Appendix
     subfolderitems:
       - page: Dependencies
-        url: /nvQuickTheme/Dependencies.html
+        url: /DNN_Tailwind/Dependencies.html
       - page: Dev Dependencies
-        url: /nvQuickTheme/DevDependencies.html
-      - page: SCSS
-        url: /nvQuickTheme/SCSS.html
+        url: /DNN_Tailwind/DevDependencies.html
+      - page: Style-With-CSS
+        url: /DNN_Tailwind/Style-With-CSS.html
   - title: How To...
     subfolderitems:
       - page: Work With Out-Of-Box Theme
-        url: /nvQuickTheme/Work-With-Out-Of-Box-Theme.html
+        url: /DNN_Tailwind/Work-With-Out-Of-Box-Theme.html
       - page: Change Color Scheme
-        url: /nvQuickTheme/Change-Color-Scheme.html
+        url: /DNN_Tailwind/Change-Color-Scheme.html
       - page: Add Custom Theme Release Notes
-        url: /nvQuickTheme/Add-Custom-Theme-Release-Notes.html
+        url: /DNN_Tailwind/Add-Custom-Theme-Release-Notes.html
       - page: Add Custom Theme License
-        url: /nvQuickTheme/Add-Custom-Theme-License.html
+        url: /DNN_Tailwind/Add-Custom-Theme-License.html
