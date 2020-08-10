@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Add Custom Theme License
 permalink: /Add-Custom-Theme-License
 ---
 

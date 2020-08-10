@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Style With CSS
 permalink: /Style-With-CSS
 ---
 

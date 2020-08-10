@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Work With Out Of Box Theme
 permalink: /Work-With-Out-Of-Box-Theme
 ---
 

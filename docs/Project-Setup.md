@@ -1,9 +1,8 @@
 ---
 layout: default
+title: Project Setup
 permalink: /Project-Setup
 ---
-
-### Project Setup
 
 When you start a new theme project, you will need to edit `project-details.json` with your project information.
 

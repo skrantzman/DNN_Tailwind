@@ -1,9 +1,8 @@
 ---
 layout: default
+title: Installation
 permalink: /Installation
 ---
-
-## Istallation
 
 ### Install Node
 

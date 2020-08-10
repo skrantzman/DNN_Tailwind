@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Dev Dependencies
 permalink: /DevDependencies
 ---
 

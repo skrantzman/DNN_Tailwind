@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Commands
 permalink: /Commands
 ---
 
