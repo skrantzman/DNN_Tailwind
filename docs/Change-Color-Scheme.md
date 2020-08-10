@@ -1,9 +1,8 @@
 ---
 layout: default
+title: Change Color Scheme
 permalink: /Change-Color-Scheme
 ---
-
-## Color Scheme
 
 ### Defining Tailwind Colors
 
