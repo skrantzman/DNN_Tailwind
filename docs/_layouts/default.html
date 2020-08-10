@@ -36,7 +36,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h2>{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
+      <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
       {{ content }}
 
         <aside id="sidebar">
