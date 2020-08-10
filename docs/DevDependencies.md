@@ -62,9 +62,13 @@ Just like it sounds, this zips files. This is used in our theme packaging task t
 
 ---
 
-### gulp-postcss
+### Postcss
 
 PostCSS is a tool for transforming CSS with JavaScript plugins, such as postcss-import, postcss-nested, postcss-simple-vars.
+
+### gulp-postcss
+
+gulp tuned version of postcss
 
 ### postcss-import
 

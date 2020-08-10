@@ -6,7 +6,7 @@ permalink: /Installation
 
 ## Prerequisites
 
-There are thre prerequisites for working with DNN_Tailwind:
+There are threr prerequisites for working with DNN_Tailwind:
 
 - Node
 - Yarn
@@ -27,6 +27,8 @@ Once you have Node installed, load up the Node command prompt. This is where you
 Yarn is a package manager that we use to manage all our dependencies quickly and securely.
 
 Refer to the [yarn installation page](https://yarnpkg.com/en/docs/install) for details on your specific operating system.
+
+\* _You may skip installing Yarn if you prefer to use NPM as your package manager of choice. Just replace yarn with npm in any yarn commands. We don't suggest mixing package managers in the same project, so pick one and stick with it_.
 
 ---
 

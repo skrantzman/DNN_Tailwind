@@ -10,7 +10,7 @@ Make sure you have navigated to your project root within your node command line.
 
 ### gulp init
 
-This command initializes all third-party dependencies utilized within **DNN_Tailwind**. More specifically, it executes the following SubTask Commands in series (completes each task before the next):
+This command initializes all third-party dependencies utilized within `DNN_Tailwind`. More specifically, it executes the following SubTask Commands in series (completes each task before the next):
 
 - **gulp fontsInit**
 - **gulp slimMenuInit**
@@ -42,7 +42,7 @@ This command does exactly what the above `gulp build` command does, but also pur
 - **gulp containers**
 - **gulp manifest**
 
-\* **_If you have used `gulp build_p` to purge your css, and you want to restore the purged css classes, just rerun `gulp build`._**
+\* _If you have used `gulp build_p` to purge your css, and you want to restore the purged css classes, just rerun `gulp build`._
 
 ### gulp watch
 
@@ -78,7 +78,7 @@ Error checks, concatenates, and minifies all CSS in the `./src/css/` folder and 
 
 ### gulp tailwind
 
-Creates/Updates the style.css file base on your tailwind.config.js tailwind.css, custom-\*.css files.
+Creates/Updates the style.css file base on your tailwind.config.js, tailwind.css, and custom-\*.css files.
 
 ### gulp images
 
