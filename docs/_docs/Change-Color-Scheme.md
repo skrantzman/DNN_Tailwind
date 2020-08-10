@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /Change-Color-Scheme
+---
+
 ## Color Scheme
 
 ### Defining Tailwind Colors

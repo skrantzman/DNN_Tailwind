@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /Commands
+---
+
 Make sure you have navigated to your project root within your node command line. From this point you can use several commands. There are a few main dev commands, and then several smaller commands for more granular control.
 
 ## Main Dev Commands

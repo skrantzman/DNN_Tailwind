@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /CSS
+---
+
 ### CSS
 
 Our css is located under `[root]/src/css/`. Unlike nvQuickTheme which uses scss (sass), DNN_Tailwind has removed scss and replaced it with pure css. This is to reflect the design of tailwind, which requires little custom css by nature. However we still hold true to nvQuickTheme's organizational structure for our css.
