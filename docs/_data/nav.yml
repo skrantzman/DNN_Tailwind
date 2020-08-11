@@ -2,7 +2,7 @@ menu:
   - title: Table of Contents
     subfolderitems:
       - page: Home
-        url: /DNN_Tailwind
+        url: /
       - page: Installation
         url: /Installation.html
       - page: Project Setup
