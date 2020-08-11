@@ -4,8 +4,6 @@ overview: true
 permalink: /
 ---
 
-### DNN_Tailwind
-
 **Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
 ### Why DNN_Tailwind Was Created
@@ -20,8 +18,10 @@ We created DNN_Tailwind to simplify the task of creating beautiful DNN themes th
 
 ### Performance
 
-Using the default theme included with the framework, we were able to get page load scores of 99 for Desktop, and 90 for Mobile, using Google's PageSpeed Insights!
+Using the default theme included with the framework, we were able to get page load scores of 99 for Desktop, and 90 for Mobile, using Google's PageSpeed Insights. For a DNN website, that's fast perfromance!\*
 
 ### Documentation
 
-Our [documentation](https://skrantzman.github.io/DNN_Tailwind/) outlines basic usage, modification, and advanced usage of this framework and developer workflow. If you are familiar with Tailwind, you're in the right place. If not, please take a few minutes to get acquainted with Tailwind CSS at [https://tailwindcss.com](https://tailwindcss.com/), then come on back and roll up your sleeves.
+Our [documentation](https://skrantzman.github.io/DNN_Tailwind/) outlines basic usage, modification, and advanced usage of this framework and developer workflow. If you are familiar with Tailwind, you're in the right place. If not, please take a few minutes to get acquainted with Tailwind CSS at [https://tailwindcss.com](https://tailwindcss.com/), then come on back and roll up your sleeves!
+
+\* _Page load speeds may vary based upon your site's complexity and content._
