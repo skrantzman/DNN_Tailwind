@@ -8,9 +8,9 @@ permalink: /
 
 ### Why DNN_Tailwind Was Created
 
-Most CSS frameworks have many components like buttons, cards, alerts, etc., pre-styled for your convenience. We call these types of frameworks "Opinionated" This makes creating sites fast and easy, but the drawback is that many sites look the same. If you want to customize the look of these components, you must struggle with overrides or awkward workarounds to get your styles to work.
+Most CSS frameworks have many components like buttons, cards, alerts, etc., pre-styled for your convenience. We call these types of frameworks "Opinionated". This makes creating websites fast and easy, but the drawback is that many sites look the same. If you want to customize the look of these components, you must struggle with overrides or awkward workarounds to get your styles to work.
 
-[Tailwind CSS](https://tailwindcss.com/) on the other hand is "Non-Opinionated". The creators have gone to great lengths to remove any, and all styling, even the default styling imposed by browsers. You use Tailwind's low-level utility classes to build your completely custom and beautiful designs all within your HTML. There is generally very little need to write any custom CSS.
+[Tailwind CSS](https://tailwindcss.com/) on the other hand is "Non-Opinionated". The creators have gone to great lengths to remove any, and all styling, even the default styling imposed by browsers. You use Tailwind's low-level utility classes to build your completely custom and beautiful designs all within your HTML. There is generally very little need to write any custom CSS. To quote Tailwind's website: _**"If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."**_
 
 In addition, most DNN themes in the marketplace today are loaded with bloat, which can make theming a pain, and for someone new to DNN, almost impossible. This bloat also vastly decreases your DNN site's performance while increasing page load times.
 
