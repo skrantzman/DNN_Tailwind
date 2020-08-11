@@ -2,28 +2,28 @@ menu:
   - title: Table of Contents
     subfolderitems:
       - page: Home
-        url: /DNN_Tailwind/
+        url: /
       - page: Installation
-        url: /DNN_Tailwind/Installation.html
+        url: /Installation.html
       - page: Project Setup
-        url: /DNN_Tailwind/Project-Setup.html
+        url: /Project-Setup.html
       - page: Commands
-        url: /DNN_Tailwind/Commands.html
+        url: /Commands.html
   - title: Appendix
     subfolderitems:
       - page: Dependencies
-        url: /DNN_Tailwind/Dependencies.html
+        url: /Dependencies.html
       - page: Dev Dependencies
-        url: /DNN_Tailwind/DevDependencies.html
+        url: /DevDependencies.html
       - page: Style-With-CSS
-        url: /DNN_Tailwind/Style-With-CSS.html
+        url: /Style-With-CSS.html
   - title: How To...
     subfolderitems:
       - page: Work With Out-Of-Box Theme
-        url: /DNN_Tailwind/Work-With-Out-Of-Box-Theme.html
+        url: /Work-With-Out-Of-Box-Theme.html
       - page: Change Color Scheme
-        url: /DNN_Tailwind/Change-Color-Scheme.html
+        url: /Change-Color-Scheme.html
       - page: Add Custom Theme Release Notes
-        url: /DNN_Tailwind/Add-Custom-Theme-Release-Notes.html
+        url: /Add-Custom-Theme-Release-Notes.html
       - page: Add Custom Theme License
-        url: /DNN_Tailwind/Add-Custom-Theme-License.html
+        url: /Add-Custom-Theme-License.html
