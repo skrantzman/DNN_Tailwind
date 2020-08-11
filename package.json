@@ -8,13 +8,14 @@
 	"license": "GPL-3.0",
 	"private": true,
 	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.13.1",
 		"@tailwindcss/typography": "^0.2.0",
 		"tailwindcss": "^1.6.2"
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.8.5",
 		"browser-sync": "^2.26.7",
 		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
 		"gulp-clean": "^0.4.0",
 		"gulp-clean-css": "^4.0.0",
 		"gulp-imagemin": "^5.0.3",

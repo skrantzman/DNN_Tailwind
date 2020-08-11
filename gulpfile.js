@@ -7,7 +7,7 @@ var bs = require("browser-sync").create(),
 	nested = require("postcss-nested"),
 	cssImport = require("postcss-import"),
 	tailwindcss = require("tailwindcss"),
-	autoprefixer = require("autoprefixer"),
+	autoprefixer = require("gulp-autoprefixer"),
 	purgecss = require("@fullhuman/postcss-purgecss"),
 	jshint = require("gulp-jshint"),
 	imagemin = require("gulp-imagemin"),
@@ -34,6 +34,14 @@ var paths = {
 	fonts: {
 		src: "./src/fonts/*",
 		dest: "./dist/fonts/",
+	},
+	faFonts: {
+		src: "./node_modules/@fortawesome/fontawesome-free/webfonts/*",
+		dest: "./dist/webfonts/",
+	},
+	faCss: {
+		src: "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+		dest: "./dist/css/",
 	},
 	slimMenu: {
 		src: "./src/assets/jquery.slimmenu.min.js",
@@ -110,6 +118,22 @@ function fontsInit() {
 		.src(paths.fonts.src)
 		.pipe(gulp.dest(paths.fonts.dest))
 		.pipe(notify({ message: "<%= file.relative %> distributed!", title: "fontsInit", sound: false }));
+}
+
+// Copy fontawesome-free fonts from node_modules to dist/fonts
+function faFontsInit() {
+	return gulp
+		.src(paths.faFonts.src)
+		.pipe(gulp.dest(paths.faFonts.dest))
+		.pipe(notify({ message: "<%= file.relative %> distributed!", title: "faFontsInit", sound: false }));
+}
+
+// Copy fontawesome-free CSS from node_modules to dist/css/fontawesome-free
+function faCssInit() {
+	return gulp
+		.src(paths.faCss.src)
+		.pipe(gulp.dest(paths.faCss.dest))
+		.pipe(notify({ message: "<%= file.relative %> distributed!", title: "faCssInit", sound: false }));
 }
 
 // Copy jquery.slimmenu.min.js from src/assets to dist/js
@@ -192,6 +216,7 @@ function styles() {
 		.src(paths.styles.src, { sourcemaps: true })
 		.pipe(cleanCSS())
 		.pipe(rename({ suffix: ".min" }))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest(paths.styles.dest, { sourcemaps: "." }))
 		.pipe(notify({ message: "<%= file.relative %> compiled and distributed!", title: "styles", sound: false }));
 }
@@ -347,7 +372,7 @@ function watch() {
 }
 
 // gulp init
-var init = gulp.series(fontsInit, slimMenuInit);
+var init = gulp.series(fontsInit, faFontsInit, faCssInit, slimMenuInit);
 
 // gulp build
 var build = gulp.series(cleandist, init, tailwind, styles, scripts, images, containers, manifest);
@@ -376,6 +401,8 @@ var tailwind = gulp.series(tailwind);
 /*------------------------------------------------------*/
 // You can use CommonJS `exports` module notation to declare tasks
 exports.fontsInit = fontsInit;
+exports.faFontsInit = faFontsInit;
+exports.faCssInit = faCssInit;
 exports.slimMenuInit = slimMenuInit;
 exports.images = images;
 exports.tailwind = tailwind;
