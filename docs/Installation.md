@@ -6,7 +6,7 @@ permalink: /Installation
 
 ## Prerequisites
 
-There are threr prerequisites for working with DNN_Tailwind:
+There are three prerequisites for working with DNN_Tailwind:
 
 - Node
 - Yarn
@@ -34,7 +34,7 @@ Refer to the [yarn installation page](https://yarnpkg.com/en/docs/install) for d
 
 ### Install Gulp
 
-Gulp is our task script manager and executor. In order for us to run this on command line in any project we're doing, from the node command line, you will need to run: `npm install gulp -g`. This will install Gulp globally on your machine. Note that if you run several installations of nvQuickTheme, you will only need to run this command on the first install.
+Gulp is our task script manager and executor. In order for us to run this on command line in any project we're doing, from the node command line, you will need to run: `npm install gulp -g`. This will install Gulp globally on your machine. Note that if you run several installations of DNN_Tailwind, you will only need to run this command on the first install.
 
 ---
 
@@ -58,10 +58,10 @@ This will read the package file and pull the necessary dependencies required for
 
 ### Build Project
 
-Now that the dependencies are install for the development environment, we should now build the project to make sure all css files are up to date.
+Now that the dependencies are installed for the development environment, we should now build the project to make sure all css files are up to date.
 
 Run: `gulp build`
 
 This will rebuild your style.css file to include any changes that may have been made to your tailwind.config.js, tailwind.css and custom-\*.css files in addition to other task.
 
-With the repo cloned, all of the dependencies installed, and the project built, your dev environment is ready to go!
+With the repo cloned, all the dependencies installed, and the project built, your dev environment is ready to go!

@@ -22,7 +22,7 @@ Gulp is what we use to automate the painful stuff. error checking, compressing, 
 
 ### gulp-autoprefixer
 
-Forget about making sure you add the -webkit- prefix. This plugin automatically adds all the prefixes necessary for all the major browsers and versions.
+Forget about making sure you add -webkit- and other prefixes. This plugin automatically adds all the prefixes necessary for all the major browsers and versions.
 
 ### gulp-clean
 

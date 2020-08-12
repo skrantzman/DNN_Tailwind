@@ -14,7 +14,7 @@ In tailwind, you can define colors in the `./tailwind.config.js` file. When usin
 
 We created our shades of the above colors with a nice little utility called [Color Shades Generator for Tailwind CSS](https://javisperez.github.io/tailwindcolorshades/#/).
 
-Once you define a color for Tailwind, that color is availible in most classes that colors are used, i.e.
+Once you define a color for Tailwind, that color is available in most classes that colors are used, i.e.
 
 - `text-dnnblue-700`
 - `bg-dnnbrown-500`
@@ -24,7 +24,7 @@ You can read more about customizing Tailwind CSS colors in their documentation [
 
 ### Change Color Scheme
 
-Most websites however are going to key off the colors for the brand being represented. Following industry best practices, there are typically three colors selected for the website main colors: primary, secondary and tertiary.
+Most websites however are going to key off the colors for the brand being represented. Following industry best practices, there are typically three colors selected for the website main colors: primary, secondary, and tertiary.
 
 So as an alternative method, we defined these within the `./src/css/custom-base-styles/colors.css` file as variables. Updating these CSS variable color definitions using HEX or RGB colors will change usage of these throughout the entire theme.
 

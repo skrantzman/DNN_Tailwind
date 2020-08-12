@@ -22,4 +22,4 @@ Because Tailwind is a non-opinionated css framework, even elements such as `p`, 
 
 However this causes a problem when our end users use DNN's built-in HTML editor. Although it appears they are styling the text in the editor, when they save, their text shows up as plain text, as the elements are not styled by Tailwind.
 
-We get around this by adding "prose" classes from Tailwind's typorgraphy plugin, to DNN's panes, such as the ContentPane. This allows the content created within the html text editor to appear as styled. I encourage you to learn more about the typography plugin by viewing its documentaion [here](https://github.com/tailwindlabs/tailwindcss-typography).
+We get around this by adding "prose" classes from Tailwind's typography plugin, to DNN's panes, such as the ContentPane. This allows the content created within the html text editor to appear as styled. I encourage you to learn more about the typography plugin by viewing its documentation [here](https://github.com/tailwindlabs/tailwindcss-typography).

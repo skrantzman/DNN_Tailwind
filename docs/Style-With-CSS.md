@@ -6,11 +6,11 @@ permalink: /Style-With-CSS
 
 ### CSS
 
-Our css is located under `[root]/src/css/`. Unlike nvQuickTheme which uses scss (sass), DNN_Tailwind has removed scss and replaced it with pure css. This is to reflect the design of tailwind, which requires little custom css by nature. However we still hold true to nvQuickTheme's organizational structure for our css.
+Our css is located under `[root]/src/css/`. Unlike nvQuickTheme which uses scss (sass), DNN_Tailwind has removed scss and replaced it with pure css. This is to reflect the design of tailwind, which requires little custom css by nature. However, we still hold true to nvQuickTheme's organizational structure for our css.
 
 ### Adding custom .css files
 
-Our organization is solid, but it won't always cover what you have. You will need to add your own .scss files for your projects, just try to keep with the organization! SCSS needs to be compiled, and to do so, there are instruction files setup to tell it how to compile, so when you add a new .scss file, you need to make sure you setup the instruction file to include your file. For almost all of them, they are named after the folder they are in. `/custom-components/components.css` for instance:
+Our organization is solid, but it won't always cover what you have. You will need to add your own .css files for your projects, just try to keep with the organization! Our CSS needs to be compiled, and to do so, there are instruction files setup to tell it how to compile, so when you add a new .css file, you need to make sure you setup the instruction file to include your file. For almost all of them, they are named after the folder they are in. `/custom-components/components.css` for instance:
 
 ```css
 @import "buttons";
@@ -65,7 +65,7 @@ It's important to keep in mind that order matters when compiling tailwind css be
 
 ### /custom-base-styles/
 
-This folder and its files are used for theme colors, font-face declaratoions and base element styling. Ex:
+This folder and its files are used for theme colors, font-face declarations and base element styling. Ex:
 
 ```scss
 // all headings are indigo-500 with font-weight of 700
@@ -85,8 +85,8 @@ Any website component styling should be done in this folder. We already have it 
 
 ### /custom-utilities/
 
-This is where any utilities you create to extend tailwind's already excelent functionality are located.
+This is where any utilities you create, to extend tailwind's already excellent functionality, are located.
 
 ### /dnn-base-styles/
 
-Any DNN specific styling is done here. We have already add dnn base styles as well as login specific styling. Fell free to modify/add styles as needed for your design.
+Any DNN specific styling is done here. We have already added dnn base styles as well as login specific styling. Feel free to modify/add styles as needed for your design.

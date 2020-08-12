@@ -56,7 +56,7 @@ This command builds and packages your custom theme into a DNN theme installation
 
 ### gulp package_p
 
-This command does the exact same thing as the `gulp package` command, but also purges your style.css file of unused tailwind classes befor minifying it.
+This command does the exact same thing as the `gulp package` command, but also purges your style.css file of unused tailwind classes before minifying it.
 
 ---
 
