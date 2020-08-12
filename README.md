@@ -10,7 +10,12 @@
 **DNN_Tailwind**, based on [nvQuickTheme](https://github.com/nvisionative/nvQuickTheme) by nvisionative,
 is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **Tailwind CSS** theme building framework and developer workflow.
 
-[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/skrantzman/dnn_tailwind) &nbsp;
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/skrantzman/dnn_tailwind/tailwindcss) &nbsp;
+[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json) &nbsp;
+![GitHub last commit](https://img.shields.io/github/last-commit/skrantzman/dnn_tailwind) &nbsp;
+
+<!-- [![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://GitHub.com/skrantzman/DNN_Tailwind/graphs/commit-activity) -->
 
 ## Instalation Instructions
 
