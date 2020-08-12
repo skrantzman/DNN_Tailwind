@@ -20,9 +20,9 @@ We created DNN_Tailwind to simplify the task of creating beautiful DNN themes th
 
 Using the default theme included with the framework, we were able to get page load scores of 99 for Desktop, and 90 for Mobile, using Google's PageSpeed Insights. For a DNN website, that's fast perfromance!\*
 
-<a href="../images/Desktop-Insights.png"><img src="../images/Desktop-Insights-thumb.png" alt="Desktop Insights Score" /></a>
+<a href="../images/Desktop-Insights.png"><img src="../assets/images/Desktop-Insights-thumb.png" alt="Desktop Insights Score" /></a>
 
-<a href="../images/Mobile-Insights.png"><img src="../images/Mobile-Insights-thumb.png" alt="Mobile Insights Score" /></a>
+<a href="../images/Mobile-Insights.png"><img src="../assets/images/Mobile-Insights-thumb.png" alt="Mobile Insights Score" /></a>
 
 ### Documentation
 
