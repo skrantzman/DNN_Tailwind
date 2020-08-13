@@ -1,42 +1,53 @@
 ![Airplane silhouette with red D N N and blue Tailwind painted on the side](https://raw.githubusercontent.com/skrantzman/DNN_Tailwind/master/images/DNN_Tailwind.svg)
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/skrantzman/dnn_tailwind) &ensp;
-![GitHub repo size](https://img.shields.io/github/repo-size/skrantzman/dnn_tailwind) &ensp;
-![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/skrantzman/dnn_tailwind/tailwindcss?color=blueviolet) &ensp;
-[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json) &ensp;
-![GitHub last commit](https://img.shields.io/github/last-commit/skrantzman/dnn_tailwind)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/skrantzman/dnn_tailwind?logo=github) &ensp;
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/skrantzman/dnn_tailwind/tailwindcss?color=38B2AC&logo=tailwind-css) &ensp;
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/skrantzman/dnn_tailwind?logo=Snyk) &ensp;
+![GitHub](https://img.shields.io/github/license/skrantzman/dnn_tailwind) &ensp;
+![GitHub repo size](https://img.shields.io/github/repo-size/skrantzman/dnn_tailwind?logo=github)
 
 &nbsp;
 
-**Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
+### **Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
-Adam Wathan creator of Tailwind CSS answers the question of "Why Tailwind"
+Adam Wathan creator of Tailwind CSS answers the question "Why Tailwind?"
 
 > "If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."
 
-To read more about **DNN_Tailwind** and view our documentation pages, please visit [https://dnntailwind.com](https://dnntailwind.com). If you are well aware of what [DNN](https://www.dnnsoftware.com/) is, what [Tailwind CSS](http://www.tailwindcss.com) is and are familiar with [nvQuickTheme](https://www.nvquicktheme.com/), then just jump down to our Quick Start Guide below. If you are unfamiliar with Tailwind CSS and are intrigued, you can read more at [https://tailwindcss.com](http://www.tailwindcss.com).
+To read more about **DNN_Tailwind** and view our documentation pages, please visit [https://dnntailwind.com](https://dnntailwind.com). If you are well aware of what `DNN` is, what`Tailwind CSS` is and are familiar with `nvQuickTheme`, then just jump down to our Quick Start Guide below. If you are unfamiliar with Tailwind CSS, but are intrigued by the above teaser, you read more about [Tailwind CSS](http://www.tailwindcss.com).
 
 ## Quick Start Guide
 
+\* **_This quick start guide also assumes you have Node, NPM or Yarn, and Gulp installed in your development environmen. If you do not, vist our full [installation
+documentaion](https://www.dnntailwind.com/installation)_**.
+
 ### Instalation Instructions
 
-1. Clone this git to the skins folder of a local DNN development machine accessible by dnndev.me. The default folder name is "DNN_Tailwind", but you can rename this if desired.
+Follow the steps outlined below to install DNN_Tailwind in your development environment.
+
+1. Open a terminal/console window.
+
+2. Clone this git to the skins folder of a local DNN development machine (preferably accessible by `dnndev.me`).
 
    ```
    git clone https://github.com/skrantzman/DNN_Tailwind.git
    ```
 
-2. Change directory into DNN_Tailwind folder.
+   The name of the root folder created is "DNN_Tailwind", but you can rename this if desired.
+
+3. Change directory into DNN_Tailwind folder.
    ```
    cd DNN_Tailwind
    ```
-3. Launch VS Code (or your editor of choice)
+4. Launch VS Code (or your editor of choice).
+
    ```
    code .
    ```
-4. You can open the Terminal window of your code editor for the following steps or continue to run them in the terminal you have open.
 
-5. Install the dependencies need for the framework
+   You can open the Terminal window of your code editor for the following steps or continue to run them in the terminal/console you have open.
+
+5. Install the dependencies need for the framework using either NPM or Yarn. It is not recogmended that you swith between dependency managers, so pinck on and stick with it.
    ```
    npm install
    ```
@@ -64,25 +75,31 @@ Tailwind CSS has thousands of utility classes, many of which you will not use in
    ```
    gulp build_p
    ```
-2. If you ever want to revert the src/css/style.css file, back to the full file, run the following command:
+2. If you ever want to revert the src/css/style.css file, back to include all Tailwind CSS utility classes, run the following command:
    ```
    gulp tailwind
+   ```
+3. If you want to revert both src/css/style.css as well as the minified dist/css/style.min.css back to include all Tailwind CSS utility classes, run the following command:
+   ```
+   gulb build
    ```
 
 ### Deployment Instructions
 
 Once you have completed styling your theme you can now package it up for deployment. You have two package option.
 
-- Full style.min.css ~ 2,253 KB
+- FULL:&emsp;Style.min.css will contain all Tailwind CSS utility classes and will be ~ 2,253 KB in size.
 
   ```
   gulp package
   ```
 
-- Purged style.min.css ~ 100 KB
+- PURGED:&emsp;Style.min.css will have all unused Tailwind CSS utility classes remove, and be ~ 100 KB in size\*
 
   ```
   gulp package_p
   ```
 
-After running either of these commands, you will find your zipped theme in the newly created "build" folder at the theme root.
+  After running either of these commands, you will find your zipped theme in the newly created "build" folder at the theme root.
+
+  \* _100 KB based on Out Of The Box theme. Your actual file size will depend on how many Tailwind CSS utility classes you use in your theme as well as how many custom classes you create_.
