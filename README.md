@@ -10,7 +10,7 @@
 
 **Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
-Adam Wathan creator of Tailwind CSS answers the question "Why Tailwind?"
+If you are wondering why we would choose Tailwind CSS as our framework of choice, Adam Wathan creator of Tailwind CSS answers that question the best
 
 > "If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."
 
