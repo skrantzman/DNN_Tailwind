@@ -1,23 +1,24 @@
 ![Airplane silhouette with red D N N and blue Tailwind painted on the side](https://raw.githubusercontent.com/skrantzman/DNN_Tailwind/master/images/DNN_Tailwind.svg)
 
-## This project is under development and not ready for production
+![GitHub package.json version](https://img.shields.io/github/package-json/v/skrantzman/dnn_tailwind) &ensp;
+![GitHub repo size](https://img.shields.io/github/repo-size/skrantzman/dnn_tailwind) &ensp;
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/skrantzman/dnn_tailwind/tailwindcss?color=blueviolet) &ensp;
+[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json) &ensp;
+![GitHub last commit](https://img.shields.io/github/last-commit/skrantzman/dnn_tailwind)
 
-- ### Status: Currently in Beta-Testing phase
+&nbsp;
 
-  - Started production on 7/14/2020 - 9:00 am pst.
-  - Beta-testing started on 7/23/2020 - 2:20 pm pst.
+**Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
-**DNN_Tailwind**, based on [nvQuickTheme](https://github.com/nvisionative/nvQuickTheme) by nvisionative,
-is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **Tailwind CSS** theme building framework and developer workflow.
+Adam Wathan creator of Tailwind CSS answers the question of "Why Tailwind"
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/skrantzman/dnn_tailwind) &nbsp;
-![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/skrantzman/dnn_tailwind/tailwindcss) &nbsp;
-[![Known Vulnerabilities](https://snyk.io/test/github/skrantzman/DNN_Tailwind/badge.svg?targetFile=package.json)](https://snyk.io/test/github/skrantzman/DNN_Tailwind?targetFile=package.json) &nbsp;
-![GitHub last commit](https://img.shields.io/github/last-commit/skrantzman/dnn_tailwind) &nbsp;
+> "If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."
 
-<!-- [![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://GitHub.com/skrantzman/DNN_Tailwind/graphs/commit-activity) -->
+To read more about **DNN_Tailwind** and view our documentation pages, please visit [https://dnntailwind.com](https://dnntailwind.com). If you are well aware of what [DNN](https://www.dnnsoftware.com/) is, what [Tailwind CSS](http://www.tailwindcss.com) is and are familiar with [nvQuickTheme](https://www.nvquicktheme.com/), then just jump down to our Quick Start Guide below. If you are unfamiliar with Tailwind CSS and are intrigued, you can read more at [https://tailwindcss.com](http://www.tailwindcss.com).
 
-## Instalation Instructions
+## Quick Start Guide
+
+### Instalation Instructions
 
 1. Clone this git to the skins folder of a local DNN development machine accessible by dnndev.me. The default folder name is "DNN_Tailwind", but you can rename this if desired.
 
@@ -33,7 +34,7 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
    ```
    code .
    ```
-4. You can open the Terminal window of your code editor for the following steps or continute to run them in the terminal you have open.
+4. You can open the Terminal window of your code editor for the following steps or continue to run them in the terminal you have open.
 
 5. Install the dependencies need for the framework
    ```
@@ -55,7 +56,7 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
 
    At this point you are ready to start customizing the base theme with Tailwind CSS!
 
-## Purging Instructions
+### Purging Instructions
 
 1. If you want to purge unused Tailwind css from the src/css/style.css file run the following command:
    ```
@@ -66,7 +67,7 @@ is more than just a great minimalist DNN (DotNetNuke) theme. It is a powerful **
    gulp tailwind
    ```
 
-## Deployment Instructions
+### Deployment Instructions
 
 Once you have completed styling your theme you can now package it up for deployment. You have two package option.
 
