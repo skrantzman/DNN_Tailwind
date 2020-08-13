@@ -14,7 +14,7 @@ Adam Wathan creator of Tailwind CSS answers the question "Why Tailwind?"
 
 > "If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."
 
-To read more about DNN_Tailwind or view our documentation pages, please visit [**dnntailwind.com**](https://dnntailwind.com). If you are unsure of what Tailwind CSS is, or how it works visit [tailwindcss.com](http://www.tailwindcss.com) to find out more. If you are well aware of what `DNN` is, what `Tailwind CSS` is and are familiar with `nvQuickTheme`, then just jump down to our Quick Start Guide below to get on the fast track.
+To read more about DNN_Tailwind or view our documentation pages, please visit [**dnntailwind.com**](https://dnntailwind.com). If you are unsure of what Tailwind CSS is, or how it works, visit [tailwindcss.com](http://www.tailwindcss.com) to find out more. If you are well aware of what `DNN` is, what `Tailwind CSS` is and are familiar with `nvQuickTheme`, then just jump down to our Quick Start Guide below to get on the fast track.
 
 ## Quick Start Guide
 
