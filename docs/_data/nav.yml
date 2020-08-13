@@ -9,6 +9,18 @@ menu:
         url: /Project-Setup.html
       - page: Commands
         url: /Commands.html
+  - title: How To...
+    subfolderitems:
+      - page: Change Color Scheme
+        url: /Change-Color-Scheme.html
+      - page: Purging Tailwind Classes
+        url: /Purging-Tailwind-Classes
+      - page: Work With The Out-Of-Box Theme
+        url: /Work-With-Out-Of-Box-Theme.html
+      - page: Add Release Notes To Your Custom Theme
+        url: /Add-Custom-Theme-Release-Notes.html
+      - page: Add A License To Your Custom Theme
+        url: /Add-Custom-Theme-License.html
   - title: Appendix
     subfolderitems:
       - page: Dependencies
@@ -17,13 +29,3 @@ menu:
         url: /DevDependencies.html
       - page: Style-With-CSS
         url: /Style-With-CSS.html
-  - title: How To...
-    subfolderitems:
-      - page: Work With Out-Of-Box Theme
-        url: /Work-With-Out-Of-Box-Theme.html
-      - page: Change Color Scheme
-        url: /Change-Color-Scheme.html
-      - page: Add Custom Theme Release Notes
-        url: /Add-Custom-Theme-Release-Notes.html
-      - page: Add Custom Theme License
-        url: /Add-Custom-Theme-License.html
