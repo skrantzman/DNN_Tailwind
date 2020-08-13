@@ -73,13 +73,13 @@ Tailwind CSS has thousands of utility classes, many of which you will not use in
 
 Once you have completed styling your theme you can now package it up for deployment. You have two package option.
 
-- Full Css ~ 5,688 KB (style.min.css ~ 2,143 KB, style.min.css.map ~ 3,545 KB)
+- Full style.min.css ~ 2,253 KB
 
   ```
   gulp package
   ```
 
-- Purged Css ~ 101 KB (style.min.css ~ 33 KB, style.min.css.map ~ 66 KB)
+- Purged style.min.css ~ 100 KB
 
   ```
   gulp package_p
