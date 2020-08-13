@@ -1,13 +1,13 @@
 <dotnetnuke type="Package" version="9.0">
   <packages>
-    <package name="GCC.DNN_Tailwind" type="Skin" version="1.0.0">
+    <package name="Grand Computer Consultants.DNN_Tailwind" type="Skin" version="1.0.0">
       <friendlyName>DNN_Tailwind</friendlyName>
-      <description>A DNN Tailwind Theme Dev Framework</description>
+      <description>A DNN theme developed using Tailwind v1.6.2</description>
       <iconFile>MyIcon.png</iconFile>
       <owner>
         <name>Steve Krantzman</name>
-        <organization>GCC</organization>
-        <url></url>
+        <organization>Grand Computer Consultants</organization>
+        <url>www.dnntailwind.com</url>
         <email></email>
       </owner>
       <license src="themeLicense.txt" />

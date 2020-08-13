@@ -2,8 +2,8 @@
 	"project": "DNN_Tailwind",
 	"version": "1.0.0",
 	"author": "Steve Krantzman",
-	"company": "GCC",
-	"url": "",
+	"company": "Grand Computer Consultants",
+	"url": "www.dnntailwind.com",
 	"email": "",
-	"description": "A DNN Tailwind Theme Dev Framework"
+	"description": "A DNN theme developed using Tailwind v1.6.2"
 }
