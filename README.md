@@ -58,6 +58,8 @@ To read more about **DNN_Tailwind** and view our documentation pages, please vis
 
 ### Purging Instructions
 
+Tailwind CSS has thousands of utility classes, many of which you will not use in your final build. Purging your style.css file of those unused tailwind utility classes is an important step in drastically reducing the size of your css and increasing your page load speeds.
+
 1. If you want to purge unused Tailwind css from the src/css/style.css file run the following command:
    ```
    gulp build_p
