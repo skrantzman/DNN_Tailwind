@@ -8,20 +8,20 @@
 
 &nbsp;
 
-### **Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
+**Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
 Adam Wathan creator of Tailwind CSS answers the question "Why Tailwind?"
 
 > "If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you."
 
-To read more about **DNN_Tailwind** and view our documentation pages, please visit [https://dnntailwind.com](https://dnntailwind.com). If you are well aware of what `DNN` is, what`Tailwind CSS` is and are familiar with `nvQuickTheme`, then just jump down to our Quick Start Guide below. If you are unfamiliar with Tailwind CSS, but are intrigued by the above teaser, you read more about [Tailwind CSS](http://www.tailwindcss.com).
+To read more about **DNN_Tailwind** and view our documentation pages, please visit [https://dnntailwind.com](https://dnntailwind.com). If you are well aware of what `DNN` is, what `Tailwind CSS` is and are familiar with `nvQuickTheme`, then just jump down to our Quick Start Guide below. If you are unfamiliar with Tailwind CSS, but are intrigued by the above teaser, read more about [Tailwind CSS](http://www.tailwindcss.com).
 
 ## Quick Start Guide
 
-\* **_This quick start guide also assumes you have Node, NPM or Yarn, and Gulp installed in your development environmen. If you do not, vist our full [installation
-documentaion](https://www.dnntailwind.com/installation)_**.
+\* **_This quick start guide also assumes you have `Node`, `NPM` (or `Yarn`), and `Gulp` installed in your development environment. If you do not, visit our full [installation
+documentation](https://www.dnntailwind.com/installation)_**.
 
-### Instalation Instructions
+### Installation Instructions
 
 Follow the steps outlined below to install DNN_Tailwind in your development environment.
 
@@ -47,7 +47,7 @@ Follow the steps outlined below to install DNN_Tailwind in your development envi
 
    You can open the Terminal window of your code editor for the following steps or continue to run them in the terminal/console you have open.
 
-5. Install the dependencies need for the framework using either NPM or Yarn. It is not recogmended that you swith between dependency managers, so pinck on and stick with it.
+5. Install the dependencies need for the framework using either NPM or Yarn. It is not recommended that you swith between dependency managers, so pick one and stick with it.
    ```
    npm install
    ```
