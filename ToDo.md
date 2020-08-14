@@ -28,4 +28,4 @@
 
 ## Documentation
 
-- [ ] Update documentation to reflect Tailwind framework and not Bootstrap.
+- [x] Update documentation to reflect Tailwind framework and not Bootstrap.
