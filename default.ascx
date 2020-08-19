@@ -6,7 +6,7 @@
 
 <!-- Main Content -->
 <main>
-	<div class="bg-gradient-dk_blue-lt_blue">
+	<div class="bg-gradient-to-r from-dkblue to-ltblue">
 		<div class="flex items-center justify-center w-full max-w-3xl px-3 mx-auto">
 			<div id="BannerPane" class="w-full my-24 prose text-center max-w-none" runat="server"></div>
 		</div>
