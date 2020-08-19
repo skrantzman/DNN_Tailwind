@@ -1,9 +1,9 @@
 {
 	"project": "DNN_Tailwind",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"author": "Steve Krantzman",
 	"company": "Grand Computer Consultants",
 	"url": "www.dnntailwind.com",
 	"email": "",
-	"description": "A DNN theme developed using Tailwind v1.6.2"
+	"description": "A DNN theme developed using Tailwind v1.7.2"
 }
