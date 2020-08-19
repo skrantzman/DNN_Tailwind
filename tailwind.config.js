@@ -1,4 +1,7 @@
 module.exports = {
+	future: {
+		removeDeprecatedGapUtilities: true,
+	},
 	purge: [],
 	theme: {
 		extend: {
@@ -45,11 +48,6 @@ module.exports = {
 				secondary: "var(--color-secondary)",
 				tertiary: "var(--color-tertiary)",
 			},
-			gradients: (theme) => ({
-				"dk_blue-lt_blue": [theme("colors.dkblue"), theme("colors.ltblue")],
-				"blue-green": [theme("colors.blue.500"), theme("colors.green.500")],
-				"purple-blue": [theme("colors.purple.500"), theme("colors.blue.500")],
-			}),
 			minHeight: {
 				"16": "4rem",
 				"32": "8rem",
@@ -62,5 +60,5 @@ module.exports = {
 		backgroundColor: ["responsive", "hover", "focus", "active"],
 		gradients: ["responsive", "hover"],
 	},
-	plugins: [require("@tailwindcss/typography"), require("./plugins/gradients")],
+	plugins: [require("@tailwindcss/typography")],
 };
