@@ -1,6 +1,6 @@
 {
 	"name": "dnn_tailwind",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "DNN Tailwind Base Theme",
 	"main": "gulpfile.js",
 	"author": "Steve Krantzman",
