@@ -9,14 +9,26 @@
 	user-select: none;
 }
 
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn.split ~ .sub-toggle:active,
+.btn.split ~ .sub-toggle:focus,
+.btn.split ~ .sub-toggle:hover {
+	@apply bg-tertiary border-tertiary;
+}
+
 .btn-primary,
 .btn.split ~ .sub-toggle,
 .btn.split ~ .split.sub-toggle ~ .sub-toggle {
-	@apply text-white bg-red-600;
+	@apply text-white bg-primary;
 }
 
 .btn:hover {
-	@apply bg-dnnbrown-500;
+	@apply bg-tertiary;
 }
 
 .btn.split,
