@@ -19,7 +19,7 @@ To read more about DNN_Tailwind or view our documentation pages, please visit [d
 ## Quick Start Guide
 
 \* **_This quick start guide also assumes you have `Node`, `NPM` (or `Yarn`), and `Gulp` installed in your development environment. If you do not, visit our full [installation
-documentation](https://www.dnntailwind.com/installation)_**.
+documentation](https://www.dnntailwind.com/Installation)_**.
 
 ### Installation Instructions
 
