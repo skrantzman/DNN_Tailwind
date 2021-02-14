@@ -7,7 +7,7 @@ var bs = require("browser-sync").create(),
 	nested = require("postcss-nested"),
 	cssImport = require("postcss-import"),
 	tailwindcss = require("tailwindcss"),
-	autoprefixer = require("gulp-autoprefixer"),
+	autoprefixer = require("autoprefixer"),
 	purgecss = require("@fullhuman/postcss-purgecss"),
 	jshint = require("gulp-jshint"),
 	imagemin = require("gulp-imagemin"),
@@ -216,7 +216,7 @@ function styles() {
 		.src(paths.styles.src, { sourcemaps: true })
 		.pipe(cleanCSS())
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(autoprefixer())
+		.pipe(postcss( [autoprefixer()] ))
 		.pipe(gulp.dest(paths.styles.dest, { sourcemaps: "." }))
 		.pipe(notify({ message: "<%= file.relative %> compiled and distributed!", title: "styles", sound: false }));
 }

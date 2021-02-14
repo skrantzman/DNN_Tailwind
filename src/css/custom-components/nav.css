@@ -144,7 +144,7 @@ nav ul.slimmenu.normal > li > ul li:last-child a.split {
 }
 
 nav ul.slimmenu.normal > li > ul a {
-	@apply flex-grow px-5 py-3 text-white whitespace-no-wrap;
+	@apply flex-grow px-5 py-3 text-white whitespace-nowrap;
 }
 
 nav ul.slimmenu.normal > li > ul a:hover,
@@ -157,7 +157,7 @@ nav ul.slimmenu.normal > li > ul > li {
 }
 
 nav ul.slimmenu.normal > li > ul > li ul {
-	@apply absolute top-0 hidden whitespace-no-wrap rounded bg-tertiary;
+	@apply absolute top-0 hidden whitespace-nowrap rounded bg-tertiary;
 	left: calc(100% + 1px);
 	z-index: 999;
 }
@@ -197,7 +197,7 @@ nav ul.slimmenu.collapsed li + li {
 }
 
 nav ul.slimmenu.collapsed a {
-	@apply flex-grow py-3 pl-5 pr-16 text-left text-white whitespace-no-wrap bg-transparent border-none rounded-none;
+	@apply flex-grow py-3 pl-5 pr-16 text-left text-white whitespace-nowrap bg-transparent border-none rounded-none;
 }
 
 nav ul.slimmenu.collapsed a:hover,
