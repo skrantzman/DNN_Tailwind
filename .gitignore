@@ -5,7 +5,7 @@ dist/
 src/scss/tailwind
 yarn-error.log
 prettierrc
-
+manifest.dnn
 
 ### jekyll ###
 _site/
