@@ -27,13 +27,13 @@ Follow the steps outlined below to install DNN_Tailwind in your development envi
 
 1. Open a terminal/console window.
 
-2. Clone this git to the skins folder of a local DNN development machine (preferably accessible by `dnndev.me`).
+2. Clone this repository to the skins folder of a local DNN development machine with a domain name such as `theme.dnndev.me`. I recommend using [nvQuickSite](https://www.nvquicksite.com/) to quickly setup a DNN dev environment with the `dnndev.me` domain name which resolves to localhost.
 
    ```
    git clone https://github.com/skrantzman/DNN_Tailwind.git
    ```
 
-   The name of the root folder created is "DNN_Tailwind", but you can rename this if desired.
+   The name of the root folder created is "DNN_Tailwind", but you can rename this to your theme name if desired.
 
 3. Change directory into DNN_Tailwind folder.
    ```

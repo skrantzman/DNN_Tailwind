@@ -352,7 +352,7 @@ function cleantemp() {
 //gulp serve
 function serve() {
 	bs.init({
-		proxy: "theme.dnndev.me",
+		proxy: "991.dnndev.me",
 	});
 	gulp.watch(paths.dnn.src).on("change", bs.reload);
 	gulp.watch(paths.images.src, images).on("change", bs.reload);
