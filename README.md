@@ -6,7 +6,10 @@
 ![GitHub](https://img.shields.io/github/license/skrantzman/dnn_tailwind) &ensp;
 ![GitHub repo size](https://img.shields.io/github/repo-size/skrantzman/dnn_tailwind?logo=github)
 
-&nbsp;
+
+> [!WARNING]
+> Many of DNN_Tailwind's dependencies are outdated but I plan to update them in the future.  DNN_Tailwind still works but you need to use node version manager (nvm) to install and run node v16.13.2 and npm v8.1.2 to install DNN_Tailwind without error and build themes.
+
 
 **Dnn_Tailwind** is a powerful theme development platform that allows you to create robust and responsive DNN website themes, all while writing very little CSS. It achieves this by leveraging the power of the Tailwind CSS framework. It is based on [nvQuickTheme](https://www.nvquicktheme.com/) by nvisionative, but the CSS framework has been ported over from Bootstrap, to Tailwind CSS.
 
